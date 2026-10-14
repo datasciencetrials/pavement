@@ -26331,7 +26331,7 @@ function gD(e, t, r = !0) {
     toggle: (f) => {
       f === n ? o((l) => !l) : (i(f), o(!0));
     },
-    indicator: (f) => (n === f ? (a ? " �-�" : " �-�") : " ⇅"),
+    indicator: (f) => (n === f ? (a ? " " : " ") : " ⇅"),
   };
 }
 function bD() {
@@ -26420,7 +26420,7 @@ function bD() {
               marginBottom: 20,
             },
             children:
-              "PMS Maintenance Programme �- Road Condition �- Regional Budget Alignment",
+              "PMS Maintenance Programme  |  Road Condition  |  Regional Budget Alignment",
           }),
         ],
       }),
@@ -26942,7 +26942,7 @@ function bD() {
               fontWeight: 700,
               marginBottom: 12,
             },
-            children: "�-️ Projects & Budget Status (2026)",
+            children: " Projects & Budget Status (2026)",
           }),
           k.jsxs("div", {
             style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 },
