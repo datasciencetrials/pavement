@@ -1,11 +1,3 @@
-# ==============================================================================
-# RULE ENFORCEMENT NOTICE:
-# Condition and traffic data must ALWAYS be broken down per surface type,
-# per functional class, per road type, per sub-region, and per financial year.
-# Analyses must explicitly show all annual trends, monthly trends, and
-# cross-tabulate against all other relevant categorical fields.
-# Use UK English, 'Paved'/'Unpaved', 'Bridges'/'Major Culverts', 'National'.
-# ==============================================================================
 """
 Generate three public data files for the BMS React/Vite app.
 """

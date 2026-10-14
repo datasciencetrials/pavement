@@ -34,7 +34,7 @@
     "bus": 0.1
   },
   "network_kpis": {
-    "total_length_km": 1020,
+    "total_links": 1020,
     "total_daily_esals": 1371318,
     "annual_esal_millions": 500.5,
     "avg_hgv_pct": 13.2,
