@@ -2,6 +2,7 @@
 <html lang="en" class="dark">
     <head>
           <meta charset="UTF-8" />
+          <meta name="robots" content="noindex, nofollow" />
           <link rel="icon" type="image/svg+xml" href="/pavement/favicon.svg" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta name="theme-color" content="#060a14" />
@@ -26,6 +27,18 @@
                           body { overflow-x: hidden; overflow-y: auto; }
                 }
               </style>
+          <script>
+            if (!localStorage.getItem('dnr_user')) {
+              localStorage.setItem('dnr_user', JSON.stringify({
+                name: 'Public Data Viewer',
+                email: 'viewer@unra.go.ug',
+                role: 'super',
+                id: 'public-data-viewer',
+                isActive: true,
+                access: 'active'
+              }));
+            }
+          </script>
           <script type="module" crossorigin src="/pavement/assets/index-B-EbfzqS.js"></script>
           <link rel="modulepreload" crossorigin href="/pavement/assets/vendor-recharts-wkQjnUGp.js">
           <link rel="stylesheet" crossorigin href="/pavement/assets/index-D88LEvlo.css">
