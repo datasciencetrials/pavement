@@ -1,6 +1,7 @@
 [
   {
     "id": "flexible-pavements-manual",
+    "available": false,
     "type": "pdf",
     "sizeBytes": 2459626,
     "category": "Flexible Pavement Design",
@@ -9,6 +10,7 @@
   },
   {
     "id": "rigid-pavement-manual",
+    "available": false,
     "type": "doc",
     "sizeBytes": 3967488,
     "category": "Rigid Pavement Design",
@@ -17,6 +19,7 @@
   },
   {
     "id": "gravel-road-design",
+    "available": false,
     "type": "doc",
     "sizeBytes": 2897408,
     "category": "Gravel Road Design",
@@ -25,6 +28,7 @@
   },
   {
     "id": "pavement-rehabilitation-guide",
+    "available": false,
     "type": "doc",
     "sizeBytes": 4379648,
     "category": "Pavement Rehabilitation",
@@ -33,6 +37,7 @@
   },
   {
     "id": "draft-design-guideline-2017",
+    "available": false,
     "type": "pdf",
     "sizeBytes": 11755114,
     "category": "General",
@@ -41,6 +46,7 @@
   },
   {
     "id": "rafu-procedural-guide",
+    "available": false,
     "type": "pdf",
     "sizeBytes": 741295,
     "category": "General",

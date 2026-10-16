@@ -48,14 +48,14 @@
   "infographics": [
     {
       "id": "network",
-      "title": "National Network",
-      "subtitle": "Current gazetted register",
+      "title": "National Road Network",
+      "subtitle": "Approved public baseline",
       "type": "stat",
       "unit": "km",
       "payload": {
-        "value": 21102.7,
-        "links": 1017,
-        "paved_km": 6405.1
+        "value": 21302,
+        "links": 404047,
+        "paved_km": 11762.8
       }
     },
     {
