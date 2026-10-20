@@ -28,6 +28,24 @@
                 @media (max-width: 900px) {
                           html, body, #root { height: auto; min-height: 100%; }
                           body { overflow-x: hidden; overflow-y: auto; }
+                          /* Keep the condition map and its analytical pane usable together.
+                             The compiled view uses inline desktop flex styles, so these
+                             scoped overrides stack only the 340 px condition pane below
+                             its map instead of covering almost the full mobile viewport. */
+                          .npms-main > div[style*="flex-direction: column"] > div[style*="flex: 1 1 0%"][style*="display: flex"] {
+                            flex-direction: column !important;
+                          }
+                          .npms-main > div[style*="flex-direction: column"] > div[style*="flex: 1 1 0%"][style*="display: flex"] > div:first-child {
+                            flex: 1 1 58% !important;
+                            min-height: 0 !important;
+                          }
+                          .npms-main aside[style*="width: 340px"] {
+                            width: 100% !important;
+                            height: 42% !important;
+                            min-height: 280px;
+                            border-left: 0 !important;
+                            border-top: 1px solid rgba(99, 102, 241, 0.2);
+                          }
                 }
               </style>
           <script>
