@@ -430,11 +430,11 @@
     "Heavy vehicle share (trucks) = 18% of total ADT; blended truck growth ≈ 3.5% p.a.",
     "ADT excl. motorcycles = 1,791 vpd (62% of mean AADT).",
     "85th %ile speed: 82 km/h (paved) · 57 km/h (unpaved); overloading rate 23% on spot WIM checks.",
-    "Estimated 4,500 road crashes and 3,200 fatalities per year on national roads (UNRA / Police data).",
+    "Estimated 4,500 road crashes and 3,200 fatalities per year on national roads (National Roads Authority / Police data).",
     "LR model R²=1.000; 3.2% growth rate aligned with Uganda's historical trajectory."
   ],
   "fleet_composition_2026": {
-    "source": "Uganda TIS / UNRA fleet survey (base year 2022, projected to 2026 at 3.2% p.a.)",
+    "source": "Uganda TIS / National Roads Authority fleet survey (base year 2022, projected to 2026 at 3.2% p.a.)",
     "total_classes": 9,
     "blended_growth_rate": 0.032,
     "base_year": 2022,
@@ -532,7 +532,7 @@
     "note": "Heavy vehicle share = Light Truck 7% + Medium Truck 5% + Heavy Truck 4% + Articulated Truck 2%"
   },
   "speed_stats": {
-    "source": "Uganda TIS speed surveys · UNRA Traffic Safety Report 2024",
+    "source": "Uganda TIS speed surveys · National Roads Authority Traffic Safety Report 2024",
     "paved_85th_percentile_kmh": 82,
     "paved_mean_speed_kmh": 68,
     "unpaved_85th_percentile_kmh": 57,
@@ -542,7 +542,7 @@
     "note": "Speed data from 42 active ATC stations and periodic TIS spot surveys"
   },
   "overloading_stats": {
-    "source": "UNRA Weigh-in-Motion (WIM) survey data 2023–2024",
+    "source": "National Roads Authority Weigh-in-Motion (WIM) survey data 2023–2024",
     "axle_load_violation_rate_pct": 23.0,
     "stations_surveyed": 8,
     "threshold_tonnes": 10.0,
@@ -551,7 +551,7 @@
     "note": "23% of all heavy vehicles exceed the 10-tonne single axle load limit on spot checks"
   },
   "accident_stats": {
-    "source": "UNRA / Uganda Police Force Road Safety Report · where available",
+    "source": "National Roads Authority / Uganda Police Force Road Safety Report · where available",
     "estimated_crashes_per_year": 4500,
     "estimated_fatalities_per_year": 3200,
     "crash_rate_per_10k_vpd": 1.56,

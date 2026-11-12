@@ -1,7 +1,7 @@
 {
   "source": "Uganda National Road Network Repository / Annual National Road Network Performance Monitoring / Condition trend for the road network.xlsx",
   "coverage": "2009/10 - 2021/22 (13 financial years)",
-  "note": "Historical DNR/UNRA condition survey trend, network-wide, split paved vs unpaved. km figures and % figures as recorded in the source workbook (percentages are rounded to 1dp from the source fractions).",
+  "note": "Historical DNR/National Roads Authority condition survey trend, network-wide, split paved vs unpaved. km figures and % figures as recorded in the source workbook (percentages are rounded to 1dp from the source fractions).",
   "records": [
     {
       "year": "2009/10",
