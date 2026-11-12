@@ -1,19 +1,61 @@
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en" class="light">
     <head>
           <meta charset="UTF-8" />
           <meta name="robots" content="noindex, nofollow" />
           <link rel="icon" type="image/svg+xml" href="/pavement/favicon.svg" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <meta name="theme-color" content="#060a14" />
+          <meta name="theme-color" content="#FFFFFF" />
           <title>Uganda National Pavement Intelligence | Data Science Trials</title>
         <meta name="description" content="Data Science Trials: National Pavement Management System and Decision Intelligence." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
         <style>
-                html, body, #root { height: 100%; margin: 0; }
-                body { overflow: hidden; background: #020617; }
+                html, body, #root { height: 100%; margin: 0; background: #F8FAFC; color: #0F172A; }
+                body { overflow: hidden; background: #F8FAFC; color: #0F172A; font-family: Inter, Arial, sans-serif; }
+                /* Light theme overrides for Data Science Trials Pavement */
+                :root, html.light {
+                  --bg-void: #F8FAFC !important;
+                  --bg-primary: #FFFFFF !important;
+                  --bg-card: #FFFFFF !important;
+                  --text-main: #0F172A !important;
+                  --text-muted: #64748B !important;
+                  --border-color: #E2E8F0 !important;
+                }
+                html.light body, html.light #root {
+                  background: #F8FAFC !important;
+                  color: #0F172A !important;
+                }
+                html.light .npms-header, html.light header, html.light .top-bar, html.light nav {
+                  background: #FFFFFF !important;
+                  color: #0F172A !important;
+                  border-color: #E2E8F0 !important;
+                  box-shadow: 0 1px 4px rgba(0,0,0,0.03) !important;
+                }
+                html.light .card, html.light [class*="-card"], html.light [class*="Card"], html.light .panel, html.light aside {
+                  background: #FFFFFF !important;
+                  color: #0F172A !important;
+                  border-color: #E2E8F0 !important;
+                }
+                html.light table, html.light th, html.light td {
+                  color: #0F172A !important;
+                  border-color: #E2E8F0 !important;
+                }
+                html.light th {
+                  background: #F1F5F9 !important;
+                }
+                html.light tr:hover td {
+                  background: #F8FAFC !important;
+                }
+                html.light input, html.light select, html.light textarea {
+                  background: #FFFFFF !important;
+                  color: #0F172A !important;
+                  border-color: #CBD5E1 !important;
+                }
+                html.light .leaflet-container {
+                  background: #F8FAFC !important;
+                }
                 /* This is a public data-view platform. Keep the compatibility session
                    internal and remove account actions from the public interface. */
                 .npms-user-badge, .npms-logout { display: none !important; }
