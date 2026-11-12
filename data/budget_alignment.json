@@ -2,7 +2,7 @@
   {
     "fiscalYear": "FY 2024/25",
     "programme": "National Road Maintenance",
-    "governanceTier": "DNR MoWT",
+    "governanceTier": "DNR DST",
     "approvedBudgetUGX": 342000000000,
     "disbursedUGX": 298400000000,
     "absorptionPct": 87.2,
@@ -14,7 +14,7 @@
   {
     "fiscalYear": "FY 2024/25",
     "programme": "DUCAR Urban Roads",
-    "governanceTier": "DDUCAR MoWT",
+    "governanceTier": "DDUCAR DST",
     "approvedBudgetUGX": 186000000000,
     "disbursedUGX": 152000000000,
     "absorptionPct": 81.7,
@@ -26,7 +26,7 @@
   {
     "fiscalYear": "FY 2024/25",
     "programme": "DUCAR District Roads",
-    "governanceTier": "DDUCAR MoWT",
+    "governanceTier": "DDUCAR DST",
     "approvedBudgetUGX": 248000000000,
     "disbursedUGX": 198000000000,
     "absorptionPct": 79.8,
@@ -38,7 +38,7 @@
   {
     "fiscalYear": "FY 2024/25",
     "programme": "Community Access Roads (CAR)",
-    "governanceTier": "DDUCAR MoWT",
+    "governanceTier": "DDUCAR DST",
     "approvedBudgetUGX": 124000000000,
     "disbursedUGX": 88000000000,
     "absorptionPct": 71.0,
@@ -50,7 +50,7 @@
   {
     "fiscalYear": "FY 2025/26",
     "programme": "National Road Maintenance",
-    "governanceTier": "DNR MoWT",
+    "governanceTier": "DNR DST",
     "approvedBudgetUGX": 384000000000,
     "disbursedUGX": 214000000000,
     "absorptionPct": 55.7,
@@ -62,7 +62,7 @@
   {
     "fiscalYear": "FY 2025/26",
     "programme": "DUCAR Urban Roads",
-    "governanceTier": "DDUCAR MoWT",
+    "governanceTier": "DDUCAR DST",
     "approvedBudgetUGX": 210000000000,
     "disbursedUGX": 108000000000,
     "absorptionPct": 51.4,
@@ -74,7 +74,7 @@
   {
     "fiscalYear": "FY 2025/26",
     "programme": "DUCAR District Roads",
-    "governanceTier": "DDUCAR MoWT",
+    "governanceTier": "DDUCAR DST",
     "approvedBudgetUGX": 286000000000,
     "disbursedUGX": 142000000000,
     "absorptionPct": 49.7,
@@ -86,7 +86,7 @@
   {
     "fiscalYear": "FY 2025/26",
     "programme": "Bridge Rehabilitation Programme",
-    "governanceTier": "DNR MoWT (BMS)",
+    "governanceTier": "DNR DST (BMS)",
     "approvedBudgetUGX": 148000000000,
     "disbursedUGX": 62000000000,
     "absorptionPct": 41.9,
@@ -99,7 +99,7 @@
   {
     "fiscalYear": "FY 2025/26",
     "programme": "NDP III Road Development",
-    "governanceTier": "DNR MoWT",
+    "governanceTier": "DNR DST",
     "approvedBudgetUGX": 924000000000,
     "disbursedUGX": 318000000000,
     "absorptionPct": 34.4,
@@ -112,7 +112,7 @@
   {
     "fiscalYear": "FY 2026/27 (Planned)",
     "programme": "DUCAR Maintenance Package",
-    "governanceTier": "DDUCAR MoWT",
+    "governanceTier": "DDUCAR DST",
     "approvedBudgetUGX": 680000000000,
     "disbursedUGX": 0,
     "absorptionPct": 0,
