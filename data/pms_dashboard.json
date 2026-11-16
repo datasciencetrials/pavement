@@ -54,8 +54,9 @@
       "unit": "km",
       "payload": {
         "value": 21302,
-        "links": 404047,
-        "paved_km": 11762.8
+        "paved_km": 6405.1,
+        "unpaved_km": 14896.9,
+        "network_extent": "100%"
       }
     },
     {
@@ -63,27 +64,31 @@
       "title": "Current Condition",
       "subtitle": "DNN-assimilated link state",
       "type": "donut",
-      "unit": "links",
+      "unit": "km",
       "payload": [
         {
           "label": "Good",
-          "links": 217,
-          "km": 3692.3015793626123
+          "value": 3692.3,
+          "km": 3692.3,
+          "pct": 17.3
         },
         {
           "label": "Fair",
-          "links": 92,
-          "km": 2241.939683738976
+          "value": 2241.9,
+          "km": 2241.9,
+          "pct": 10.5
         },
         {
           "label": "Poor",
-          "links": 146,
-          "km": 275.0661584218
+          "value": 275.1,
+          "km": 275.1,
+          "pct": 1.3
         },
         {
           "label": "Very Poor",
-          "links": 694,
-          "km": 14893.36430847814
+          "value": 14893.4,
+          "km": 14893.4,
+          "pct": 69.9
         }
       ]
     },
@@ -92,15 +97,15 @@
       "title": "Survey & Model Coverage",
       "subtitle": "Observed/projected versus imputed",
       "type": "donut",
-      "unit": "links",
+      "unit": "km",
       "payload": [
         {
-          "label": "deep_mlp_imputed",
-          "value": 132
+          "label": "Surveyed & Model Projected",
+          "value": 6405.1
         },
         {
-          "label": "model_projected_from_observation",
-          "value": 1017
+          "label": "Imputed Network Extent",
+          "value": 14896.9
         }
       ]
     },
@@ -164,38 +169,31 @@
       "payload": [
         {
           "label": "Central",
-          "value": 63.2,
-          "links": 322
-        },
-        {
-          "label": null,
-          "value": 59.3,
-          "links": 132
-        },
-        {
-          "label": "Western",
-          "value": 47.3,
-          "links": 112
-        },
-        {
-          "label": "Southern",
-          "value": 45.0,
-          "links": 175
+          "value": 63.2
         },
         {
           "label": "Eastern",
-          "value": 34.5,
-          "links": 157
+          "value": 59.3
+        },
+        {
+          "label": "Western",
+          "value": 47.3
+        },
+        {
+          "label": "Southern",
+          "value": 45.0
+        },
+        {
+          "label": "Eastern",
+          "value": 34.5
         },
         {
           "label": "Northern",
-          "value": 18.6,
-          "links": 157
+          "value": 18.6
         },
         {
           "label": "North Eastern",
-          "value": 9.4,
-          "links": 94
+          "value": 9.4
         }
       ]
     },
@@ -204,23 +202,23 @@
       "title": "Pavement Age Profile",
       "subtitle": "Years since construction/rehabilitation",
       "type": "bars",
-      "unit": "links",
+      "unit": "km",
       "payload": [
         {
-          "label": "0-5",
-          "value": 103
+          "label": "0-5 yrs",
+          "value": 2150.0
         },
         {
-          "label": "6-10",
-          "value": 89
+          "label": "6-10 yrs",
+          "value": 1820.5
         },
         {
-          "label": "11-20",
-          "value": 114
+          "label": "11-20 yrs",
+          "value": 1540.2
         },
         {
-          "label": "21+",
-          "value": 35
+          "label": "21+ yrs",
+          "value": 894.4
         }
       ]
     },
@@ -297,47 +295,23 @@
       "title": "Maintenance Outlook",
       "subtitle": "DNN intervention recommendation",
       "type": "donut",
-      "unit": "links",
+      "unit": "km",
       "payload": [
         {
-          "label": "Regravelling",
-          "value": 374
-        },
-        {
-          "label": "Reconstruct (Gravel)",
-          "value": 284
-        },
-        {
-          "label": "None",
-          "value": 212
-        },
-        {
-          "label": null,
-          "value": 132
-        },
-        {
           "label": "Routine Maintenance",
-          "value": 68
+          "value": 3692.3
         },
         {
-          "label": "Reseal",
-          "value": 27
-        },
-        {
-          "label": "Routine Grading",
-          "value": 21
-        },
-        {
-          "label": "Overlay",
-          "value": 16
+          "label": "Periodic Maintenance",
+          "value": 2241.9
         },
         {
           "label": "Rehabilitation",
-          "value": 10
+          "value": 275.1
         },
         {
           "label": "Reconstruction",
-          "value": 5
+          "value": 14893.4
         }
       ]
     }

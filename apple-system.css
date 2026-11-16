@@ -536,3 +536,139 @@ div[style*="background:#0b0f18"] {
   background: #F5F5F7 !important;
   color: #0F172A !important;
 }
+
+
+/* === Comprehensive Apple HIG Light Theme Overrides for NPMS Pavement === */
+html, body, #root, .npms-main, [class*="npms-main"] {
+  background: #F5F5F7 !important;
+  color: #0F172A !important;
+  font-family: Arial, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif !important;
+}
+
+header, .npms-header, [class*="npms-header"] {
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
+}
+
+.npms-brand strong {
+  color: #0F172A !important;
+}
+
+.npms-brand span {
+  color: #64748B !important;
+}
+
+.npms-primary-link {
+  color: #475569 !important;
+  font-weight: 500 !important;
+  border-radius: 980px !important;
+  transition: all 0.2s ease !important;
+}
+
+.npms-primary-link:hover {
+  background: rgba(0, 0, 0, 0.04) !important;
+  color: #0F172A !important;
+}
+
+.npms-primary-link.active, .npms-primary-link[class*="active"] {
+  background: #0071E3 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 2px 8px rgba(0, 113, 227, 0.28) !important;
+  font-weight: 600 !important;
+}
+
+/* Floating Action Toolbar */
+.npms-fac {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 980px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important;
+}
+
+.npms-fac-btn {
+  background: transparent !important;
+  color: #0F172A !important;
+  font-weight: 600 !important;
+}
+
+.npms-fac-btn:hover {
+  background: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Cards & Infographics */
+.npms-infographic-card, .card, [class*="Card"], [class*="-card"], article, aside {
+  background: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 14px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03), 0 10px 24px rgba(0, 0, 0, 0.04) !important;
+  color: #0F172A !important;
+}
+
+.npms-infographic-card h3, .card h3, h2, h3, h4 {
+  color: #0F172A !important;
+  font-weight: 700 !important;
+}
+
+.npms-infographic-card p, .card p, [class*="subtitle"], [class*="description"] {
+  color: #475569 !important;
+}
+
+/* High Contrast Headings and Stat Values */
+[style*="font-size: 42"], [style*="fontSize: 42"], [style*="font-size:42"], [style*="fontSize:42"] {
+  color: #0F172A !important;
+  font-weight: 900 !important;
+}
+
+/* Pill Badges */
+[style*="display: flex"][style*="alignItems: center"][style*="padding: 8px 11px"] {
+  background: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02) !important;
+}
+
+/* Tables */
+table {
+  background: #FFFFFF !important;
+  color: #0F172A !important;
+}
+
+th {
+  background: #F8FAFC !important;
+  color: #0F172A !important;
+  font-weight: 600 !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+
+td {
+  color: #0F172A !important;
+  border-bottom: 1px solid #F1F5F9 !important;
+}
+
+tr:hover td {
+  background: #F8FAFC !important;
+}
+
+/* Form Controls */
+input, select, textarea {
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  color: #0F172A !important;
+  border-radius: 8px !important;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #0071E3 !important;
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15) !important;
+  outline: none !important;
+}
+
+/* Leaflet map light mode */
+.leaflet-container {
+  background: #F1F5F9 !important;
+}
