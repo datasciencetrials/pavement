@@ -2,7 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <name>Uganda National Road Structures</name>
-<description>UNRA Bridge and Major Culvert Inventory</description>
+<description>National Roads Authority Bridge and Major Culvert Inventory</description>
 <Style id="cond1"><IconStyle><color>ff0000ff</color><Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon></IconStyle></Style>
 <Style id="cond2"><IconStyle><color>ff0080ff</color><Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon></IconStyle></Style>
 <Style id="cond3"><IconStyle><color>ff00ffff</color><Icon><href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon></IconStyle></Style>
