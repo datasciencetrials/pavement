@@ -3,7 +3,7 @@
   "last_updated": "2026-08-20",
   "kpis": [
     {
-      "label": "NDP IV Projects",
+      "label": "Priority Investment Projects",
       "value": "158",
       "color": "#00f5ff"
     },
@@ -114,7 +114,7 @@
     }
   ],
   "insights": [
-    "NDP IV: 158 project components, est. $4.00B USD total (2024-2030).",
+    "National Priority: 158 project components, est. $4.00B USD total (2024-2030).",
     "63 ongoing, 59 proposed, 36 planned.",
     "Rehabilitation of poor-condition roads is the primary investment category.",
     "GOU and development partners (IDA, ADB, JICA, EU) co-finance the programme.",

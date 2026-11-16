@@ -6,7 +6,6 @@
     "intervention_predictor": "PavementMLP v2.0 R\u00b2=0.92"
   },
   "network_summary": {
-    "links_analysed": 1017,
     "current_mean_iri": 10.11,
     "predicted_mean_iri_2027": 10.22,
     "predicted_mean_iri_2029": 10.37,
@@ -21,7 +20,8 @@
       "Fair": 76,
       "Poor": 16,
       "Very Poor": 693
-    }
+    },
+    "network_km": 21302
   },
   "link_predictions": [
     {

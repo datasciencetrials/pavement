@@ -541,7 +541,7 @@ const line=(x,y,name,col,extra={})=>({type:'scatter',mode:'lines+markers',x,y,na
   line:{color:col,width:2.4,shape:'spline',smoothing:0.8},
   marker:{color:col,size:4.5,line:{color:'rgba(2,5,8,0.7)',width:1}},...extra});
 const pie=(vals,lbls,cols)=>({type:'pie',values:vals,labels:lbls,
-  marker:{colors:cols,line:{color:'#020508',width:2}},
+  marker:{colors:cols,line:{color:'#E2E8F0',width:2}},
   textfont:{size:8.5,color:'#aeb9c9',family:NSFONT},hole:0.45,direction:'clockwise'});
 
 // ── TAB INIT FLAGS ─────────────────────────────────────────────
@@ -562,7 +562,7 @@ function initT1(){ACC=TABACC[1];
     labels:['21,302 km','Paved 6,405','Unpaved 14,897','Bitumen 5,840','Concrete 565','Gravel 10,240','Earth 4,657','Good 2,242','Fair 2,242','Poor 1,281','Crit 640','Good 1,490','Fair 4,469','Poor 5,959','Crit 2,979'],
     parents:['','Total','Total','Paved','Paved','Unpaved','Unpaved','Paved','Paved','Paved','Paved','Unpaved','Unpaved','Unpaved','Unpaved'],
     values:[21302,6405,14897,5840,565,10240,4657,2242,2242,1281,640,1490,4469,5959,2979],
-    marker:{colors:['#2563eb','#278a50','#c75a24','#148da0','#24865a','#c25e2a','#8a4a26','#278a50','#c28a14','#c75a24','#b83d6b','#2b8a57','#c9a532','#d95f30','#c22461'],line:{color:'#020508',width:1}},
+    marker:{colors:['#2563eb','#278a50','#c75a24','#148da0','#24865a','#c25e2a','#8a4a26','#278a50','#c28a14','#c75a24','#b83d6b','#2b8a57','#c9a532','#d95f30','#c22461'],line:{color:'#E2E8F0',width:1}},
     textfont:{size:8}}],
     {title:{text:'Network Hierarchy',font:{color:'#2563eb',size:11,family:NSFONT},x:0.5},paper_bgcolor:'rgba(0,0,0,0)',margin:{t:32,r:0,b:0,l:0}},CFG);
 
@@ -572,7 +572,7 @@ function initT1(){ACC=TABACC[1];
     labels:['21,302km','Central 4,436','Northern 3,920','Eastern 4,290','Western 3,000','Southern 3,300','N.Eastern 2,356','A:1,050','B:1,300','C:2,086','A:720','B:1,100','C:2,100','A:800','B:1,200','C:2,290','A:640','B:900','C:1,460','A:620','B:850','C:1,830','A:370','B:450','C:1,536'],
     parents:['','Net','Net','Net','Net','Net','Net','Cen','Cen','Cen','Nor','Nor','Nor','Eas','Eas','Eas','Wes','Wes','Wes','Sou','Sou','Sou','NE','NE','NE'],
     values:[21302,4436,3920,4290,3000,3300,2356,1050,1300,2086,720,1100,2100,800,1200,2290,640,900,1460,620,850,1830,370,450,1536],
-    marker:{colorscale:[[0,'#001a1a'],[0.5,'#006666'],[1,'#2563eb']],line:{color:'#020508',width:1}},
+    marker:{colorscale:[[0,'#001a1a'],[0.5,'#006666'],[1,'#2563eb']],line:{color:'#E2E8F0',width:1}},
     textfont:{size:8}}],
     {title:{text:'Network by Region & Class',font:{color:'#2563eb',size:11,family:NSFONT},x:0.5},paper_bgcolor:'rgba(0,0,0,0)',margin:{t:32,r:0,b:0,l:0}},CFG);
 
@@ -599,7 +599,7 @@ function initT1(){ACC=TABACC[1];
   const z=[[80,62,45],[70,55,38],[72,58,40],[75,60,42],[78,61,44],[65,50,34]];
   NSPLOT('c5',[{type:'heatmap',z,x:['Class A','Class B','Class C'],y:D.regLbl,
     colorscale:[[0,'#b83d6b'],[0.33,'#c75a24'],[0.66,'#c28a14'],[1,'#278a50']],
-    text:z,texttemplate:'%{text}',textfont:{size:12,color:'#020508'},
+    text:z,texttemplate:'%{text}',textfont:{size:12,color:'#E2E8F0'},
     colorbar:{title:'Score',titlefont:{color:'rgba(148,163,184,0.6)',size:8},tickfont:{color:'rgba(148,163,184,0.6)',size:7},thickness:8}}],
     TL('Condition Score · Region × Class (0–100)'),CFG);
 
@@ -636,7 +636,7 @@ function initT1(){ACC=TABACC[1];
 
   // c10 Horizontal bar - region km
   NSPLOT('c10',[{type:'bar',orientation:'h',y:D.regLbl,x:D.regKm,name:'Total',
-    marker:{color:D.regCol,line:{color:'#020508',width:0.5}},text:D.regKm.map(v=>v.toLocaleString()+' km'),textposition:'inside',textfont:{size:8,color:'#020508'}},
+    marker:{color:D.regCol,line:{color:'#E2E8F0',width:0.5}},text:D.regKm.map(v=>v.toLocaleString()+' km'),textposition:'inside',textfont:{size:8,color:'#E2E8F0'}},
     {type:'bar',orientation:'h',y:D.regLbl,x:D.regPaved,name:'Paved',
     marker:{color:'#278a5066'},text:D.regPaved.map(v=>v.toLocaleString()),textposition:'inside',textfont:{size:8}}],
     TL('Network Length by Region',{barmode:'overlay',xaxis:{title:{text:'km',font:{size:9}}}}),CFG);
@@ -654,7 +654,7 @@ function initT1(){ACC=TABACC[1];
 
   // c13 Pie - paved vs unpaved split
   NSPLOT('c13',[{type:'pie',values:[6405,14897],labels:['Paved 6,405 km','Unpaved 14,897 km'],
-    marker:{colors:['#2563eb','#c75a24'],line:{color:'#020508',width:2}},
+    marker:{colors:['#2563eb','#c75a24'],line:{color:'#E2E8F0',width:2}},
     pull:[0.05,0],hole:0.5,textfont:{size:8.5,color:'#c3cede'},
     texttemplate:'%{label}<br>%{percent}'}],
     TL('Paved vs Unpaved Network'),CFG);
@@ -695,7 +695,7 @@ function initT2(){ACC=TABACC[2];
   // c18 Bar - overall condition km
   const totCond=[3732,6711,7240,3619];
   NSPLOT('c18',[{type:'bar',x:D.condLbl,y:totCond,
-    marker:{color:D.condCol,line:{color:'#020508',width:0.5}},
+    marker:{color:D.condCol,line:{color:'#E2E8F0',width:0.5}},
     text:totCond.map(v=>v.toLocaleString()),textposition:'outside',textfont:{size:8},
     name:'Total km'}],
     TL('Overall Condition (km)',{yaxis:{title:{text:'km',font:{size:9}}}}),CFG);
@@ -747,8 +747,8 @@ function initT2(){ACC=TABACC[2];
 
   // c24 Horizontal bar - treatment needs
   NSPLOT('c24',[{type:'bar',orientation:'h',y:D.treatLbl,x:D.treatKm,
-    marker:{color:['#278a50','#c28a14','#ffa63f','#ff5330','#b83d6b'],line:{color:'#020508',width:0.5}},
-    text:D.treatKm.map(v=>v.toLocaleString()+' km'),textposition:'inside',textfont:{size:8,color:'#020508'}}],
+    marker:{color:['#278a50','#c28a14','#ffa63f','#ff5330','#b83d6b'],line:{color:'#E2E8F0',width:0.5}},
+    text:D.treatKm.map(v=>v.toLocaleString()+' km'),textposition:'inside',textfont:{size:8,color:'#E2E8F0'}}],
     TL('Treatment Needs by Type (km)',{xaxis:{title:{text:'km',font:{size:9}}}}),CFG);
 
   // c25 Scatter - IRI vs AADT
@@ -770,7 +770,7 @@ function initT2(){ACC=TABACC[2];
 
   // c27 Bar - cost per km by treatment
   NSPLOT('c27',[{type:'bar',x:D.costTreat,y:D.costPerKm,
-    marker:{color:['#278a50','#c28a14','#ffa63f','#ff5330','#b83d6b'],line:{color:'#020508',width:0.5}},
+    marker:{color:['#278a50','#c28a14','#ffa63f','#ff5330','#b83d6b'],line:{color:'#E2E8F0',width:0.5}},
     text:D.costPerKm.map(v=>v.toLocaleString()),textposition:'outside',textfont:{size:8}}],
     TL('Cost per km by Treatment (mn UGX)',{yaxis:{title:{text:'mn UGX/km',font:{size:9}}}}),CFG);
 
@@ -778,7 +778,7 @@ function initT2(){ACC=TABACC[2];
   const iriSurf=D.regLbl.map((_,i)=>D.treatLbl.map((_,j)=>+(2+i*1.2+j*1.8+Math.random()*0.5).toFixed(1)));
   NSPLOT('c28',[{type:'heatmap',z:iriSurf,x:D.treatLbl,y:D.regLbl,
     colorscale:[[0,'#278a50'],[0.5,'#c28a14'],[1,'#b83d6b']],
-    text:iriSurf,texttemplate:'%{text:.1f}',textfont:{size:9,color:'#020508'},
+    text:iriSurf,texttemplate:'%{text:.1f}',textfont:{size:9,color:'#E2E8F0'},
     colorbar:{title:'IRI',titlefont:{color:'rgba(148,163,184,0.6)',size:8},tickfont:{color:'rgba(148,163,184,0.6)',size:7},thickness:8}}],
     TL('IRI Heatmap · Region × Treatment Need'),CFG);
 
@@ -795,7 +795,7 @@ function initT2(){ACC=TABACC[2];
   // c30 Funnel - treatment pipeline
   NSPLOT('c30',[{type:'funnel',y:['Surveyed Links','Condition Assessed','Treatment Planned','Budgeted','Under Contract','Completed FY25'],
     x:[21302,20840,8420,4200,1240,428],
-    marker:{color:['#2563eb','#148da0','#00aacc','#c28a14','#c75a24','#278a50'],line:{color:'#020508',width:0.5}},
+    marker:{color:['#2563eb','#148da0','#00aacc','#c28a14','#c75a24','#278a50'],line:{color:'#E2E8F0',width:0.5}},
     textinfo:'value+percent initial',textfont:{size:8.5,color:'#c3cede'},opacity:0.9}],
     TL('Pavement Treatment Pipeline FY25/26',{funnelmode:'stack',yaxis:{tickfont:{size:8.5}}}),CFG);
 }
@@ -808,8 +808,8 @@ function initT3(){ACC=TABACC[3];
   // c31 Horizontal bar - AADT by corridor
   NSPLOT('c31',[{type:'bar',orientation:'h',y:D.corridors,x:D.corrAADT,
     marker:{color:D.corrAADT.map(v=>v>10000?'#b83d6b':v>5000?'#c75a24':v>2000?'#c28a14':'#278a50'),
-    line:{color:'#020508',width:0.5}},
-    text:D.corrAADT.map(v=>v.toLocaleString()),textposition:'inside',textfont:{size:8,color:'#020508'}}],
+    line:{color:'#E2E8F0',width:0.5}},
+    text:D.corrAADT.map(v=>v.toLocaleString()),textposition:'inside',textfont:{size:8,color:'#E2E8F0'}}],
     TL('AADT by Major Corridor',{xaxis:{title:{text:'AADT (veh/day)',font:{size:9}}},yaxis:{tickfont:{size:8}}}),CFG);
 
   // c32 Line - AADT trend national
@@ -845,7 +845,7 @@ function initT3(){ACC=TABACC[3];
 
   // c36 Bar - hourly traffic pattern
   NSPLOT('c36',[{type:'bar',x:D.hourHr,y:D.hourPct,name:'% Peak',
-    marker:{color:D.hourPct.map(v=>v>80?'#b83d6b':v>50?'#c75a24':v>25?'#c28a14':'#278a50'),line:{color:'#020508',width:0.5}},
+    marker:{color:D.hourPct.map(v=>v>80?'#b83d6b':v>50?'#c75a24':v>25?'#c28a14':'#278a50'),line:{color:'#E2E8F0',width:0.5}},
     text:D.hourPct.map(v=>v+'%'),textposition:'outside',textfont:{size:7}}],
     TL('Hourly Traffic Pattern (% of Peak)',{xaxis:{title:{text:'Hour (EAT)',font:{size:9}}},yaxis:{title:{text:'% of peak',font:{size:9}},range:[0,115]}}),CFG);
 
@@ -916,7 +916,7 @@ function initT3(){ACC=TABACC[3];
 function initT4(){ACC=TABACC[4];
   // c46 Donut - by type
   NSPLOT('c46',[pie(D.strType,['Bridges 312','Box Culverts 142','Culverts 68','Drifts/Causeway 24'],['#2563eb','#00aacc','#006688','#003344'])],
-    TL('Structures by Type (546 Total)'),CFG);
+    TL('Structures by Type (552 Total)'),CFG);
 
   // c47 Donut - condition
   NSPLOT('c47',[pie(D.strCond,['Good 197','Fair 164','Poor 131','Critical 54'],D.condCol)],
@@ -924,7 +924,7 @@ function initT4(){ACC=TABACC[4];
 
   // c48 Bar - material
   NSPLOT('c48',[{type:'bar',x:D.strMatLbl,y:D.strMat,
-    marker:{color:['#2563eb','rgba(148,163,184,0.7)','#886600','#664400','#442200'],line:{color:'#020508',width:0.5}},
+    marker:{color:['#2563eb','rgba(148,163,184,0.7)','#886600','#664400','#442200'],line:{color:'#E2E8F0',width:0.5}},
     text:D.strMat,textposition:'outside',textfont:{size:8}}],
     TL('Structures by Material',{yaxis:{title:{text:'Count',font:{size:9}}}}),CFG);
 
@@ -949,13 +949,13 @@ function initT4(){ACC=TABACC[4];
 
   // c51 Bar - by span class
   NSPLOT('c51',[{type:'bar',x:D.strSpanLbl,y:D.strSpan,
-    marker:{color:['#003344','#005566','#007799','#009999','#00bbcc'],line:{color:'#020508',width:0.5}},
+    marker:{color:['#003344','#005566','#007799','#009999','#00bbcc'],line:{color:'#E2E8F0',width:0.5}},
     text:D.strSpan,textposition:'outside',textfont:{size:8}}],
     TL('Bridges by Span Class',{yaxis:{title:{text:'Count',font:{size:9}}}}),CFG);
 
   // c52 Bar - by age
   NSPLOT('c52',[{type:'bar',x:D.strAgeLbl,y:D.strAge,
-    marker:{color:D.strAge.map((v,i)=>['#278a50','#c28a14','#ffa63f','#ff5330','#b83d6b'][i]),line:{color:'#020508',width:0.5}},
+    marker:{color:D.strAge.map((v,i)=>['#278a50','#c28a14','#ffa63f','#ff5330','#b83d6b'][i]),line:{color:'#E2E8F0',width:0.5}},
     text:D.strAge,textposition:'outside',textfont:{size:8}}],
     TL('Bridges by Age Class',{yaxis:{title:{text:'Count',font:{size:9}}}}),CFG);
 
@@ -972,7 +972,7 @@ function initT4(){ACC=TABACC[4];
   // c54 Funnel - inspection pipeline
   NSPLOT('c54',[{type:'funnel',y:['Total Registered','Principal Insp.','Routine Insp.','Good Condition','Maintenance Due','Needs Urgent Works'],
     x:[546,420,380,197,185,54],
-    marker:{color:['#2563eb','#148da0','#00aacc','#278a50','#c28a14','#b83d6b'],line:{color:'#020508',width:0.5}},
+    marker:{color:['#2563eb','#148da0','#00aacc','#278a50','#c28a14','#b83d6b'],line:{color:'#E2E8F0',width:0.5}},
     textinfo:'value+percent initial',textfont:{size:8.5},opacity:0.9}],
     TL('Structure Inspection Funnel',{yaxis:{tickfont:{size:8.5}}}),CFG);
 
@@ -980,8 +980,8 @@ function initT4(){ACC=TABACC[4];
   NSPLOT('c55',[{type:'bar',orientation:'h',
     y:['Deck Deterioration','Scour/Foundation','Expansion Joint','Bearing Damage','Railing/Parapet','Approach Slab','Abutment Crack','Soffit Crack'],
     x:[142,84,128,96,180,72,56,64],
-    marker:{color:['#b83d6b','#ff2200','#ff5330','#c75a24','#ff8800','#ffaa00','#ffcc00','#c28a14'],line:{color:'#020508',width:0.5}},
-    text:[142,84,128,96,180,72,56,64],textposition:'inside',textfont:{size:8,color:'#020508'}}],
+    marker:{color:['#b83d6b','#ff2200','#ff5330','#c75a24','#ff8800','#ffaa00','#ffcc00','#c28a14'],line:{color:'#E2E8F0',width:0.5}},
+    text:[142,84,128,96,180,72,56,64],textposition:'inside',textfont:{size:8,color:'#E2E8F0'}}],
     TL('Structure Deficiency Types',{xaxis:{title:{text:'Count of deficiencies',font:{size:9}}}}),CFG);
 
   // c56 Scatter - repair cost vs condition
@@ -998,7 +998,7 @@ function initT4(){ACC=TABACC[4];
   const condSurf=ageLbl.map((_,i)=>D.strSpanLbl.map((_,j)=>Math.round(Math.max(10,90-i*15-j*5+Math.random()*8))));
   NSPLOT('c57',[{type:'heatmap',z:condSurf,x:D.strSpanLbl,y:ageLbl,
     colorscale:[[0,'#b83d6b'],[0.35,'#c75a24'],[0.65,'#c28a14'],[1,'#278a50']],
-    text:condSurf,texttemplate:'%{text}',textfont:{size:9,color:'#020508'},
+    text:condSurf,texttemplate:'%{text}',textfont:{size:9,color:'#E2E8F0'},
     colorbar:{title:'Score',titlefont:{color:'rgba(148,163,184,0.6)',size:8},tickfont:{color:'rgba(148,163,184,0.6)',size:7},thickness:8}}],
     TL('Bridge Condition · Age × Span Class'),CFG);
 
@@ -1111,7 +1111,7 @@ function initT5(){ACC=TABACC[5];
 
   // c73 Pie - funding sources
   NSPLOT('c73',[{type:'pie',values:[820,480,340,202],labels:['GoU (National Roads Authority)','World Bank/IDA','AfDB/AfDF','Other Donors'],
-    marker:{colors:['#2563eb','#278a50','#c28a14','#c75a24'],line:{color:'#020508',width:1}},
+    marker:{colors:['#2563eb','#278a50','#c28a14','#c75a24'],line:{color:'#E2E8F0',width:1}},
     hole:0.4,textfont:{size:8.5,color:'#c3cede'}}],
     TL('Budget Funding Sources (bn UGX)'),CFG);
 
@@ -1130,19 +1130,19 @@ function initT5(){ACC=TABACC[5];
 function initT6(){ACC=TABACC[6];
   // c75 Horizontal bar - project progress
   NSPLOT('c75',[{type:'bar',orientation:'h',y:D.projName,x:D.projPct,
-    marker:{color:D.projPct.map(v=>v>=75?'#278a50':v>=50?'#c28a14':v>=25?'#c75a24':'#b83d6b'),line:{color:'#020508',width:0.5}},
-    text:D.projPct.map(v=>v+'%'),textposition:'inside',textfont:{size:8,color:'#020508'}}],
+    marker:{color:D.projPct.map(v=>v>=75?'#278a50':v>=50?'#c28a14':v>=25?'#c75a24':'#b83d6b'),line:{color:'#E2E8F0',width:0.5}},
+    text:D.projPct.map(v=>v+'%'),textposition:'inside',textfont:{size:8,color:'#E2E8F0'}}],
     TL('Project Completion Progress (%)',{xaxis:{title:{text:'% Complete',font:{size:9}},range:[0,108]},yaxis:{tickfont:{size:8.5}}}),CFG);
 
   // c76 Bar - OPRC performance scores
   NSPLOT('c76',[{type:'bar',x:D.oprcLot,y:D.oprcScore,
-    marker:{color:D.oprcScore.map(v=>v>=80?'#278a50':v>=65?'#c28a14':'#c75a24'),line:{color:'#020508',width:0.5}},
+    marker:{color:D.oprcScore.map(v=>v>=80?'#278a50':v>=65?'#c28a14':'#c75a24'),line:{color:'#E2E8F0',width:0.5}},
     text:D.oprcScore.map(v=>v+'/100'),textposition:'outside',textfont:{size:8}}],
     TL('OPRC Contract Performance Scores',{yaxis:{title:{text:'Score /100',font:{size:9}},range:[0,110]},xaxis:{tickfont:{size:8}}}),CFG);
 
   // c77 Pie - project status
   NSPLOT('c77',[{type:'pie',values:[6,5,3],labels:['On Schedule (6)','Minor Delay (5)','Behind (3)'],
-    marker:{colors:['#278a50','#c28a14','#b83d6b'],line:{color:'#020508',width:1}},
+    marker:{colors:['#278a50','#c28a14','#b83d6b'],line:{color:'#E2E8F0',width:1}},
     hole:0.45,textfont:{size:9,color:'#c3cede'}}],
     TL('Project Status Distribution (14 Projects)'),CFG);
 
@@ -1183,7 +1183,7 @@ function initT6(){ACC=TABACC[6];
   // c83 Funnel - project pipeline
   NSPLOT('c83',[{type:'funnel',y:['Identified','Feasibility','Appraisal','Design','Tender','Implementation','Completed'],
     x:[42,28,20,16,14,14,8],
-    marker:{color:['#003344','#005566','#007799','#00aacc','#c28a14','#2563eb','#278a50'],line:{color:'#020508',width:0.5}},
+    marker:{color:['#003344','#005566','#007799','#00aacc','#c28a14','#2563eb','#278a50'],line:{color:'#E2E8F0',width:0.5}},
     textinfo:'value+percent initial',textfont:{size:8.5},opacity:0.9}],
     TL('Project Pipeline Stages',{yaxis:{tickfont:{size:8.5}}}),CFG);
 
@@ -1198,7 +1198,7 @@ function initT6(){ACC=TABACC[6];
 
   // c86 Heatmap - project density by region × type
   NSPLOT('c86',[{type:'heatmap',z:[[3,2,1,1],[2,1,2,0],[1,1,1,1],[2,1,1,0],[1,1,1,0],[1,0,1,0]],x:['OPRC','Periodic','Emergency','Development'],y:D.regLbl,
-    colorscale:[[0,'#020508'],[0.5,'#004455'],[1,'#2563eb']],text:[[3,2,1,1],[2,1,2,0],[1,1,1,1],[2,1,1,0]],texttemplate:'%{text}',textfont:{size:10,color:'#fff'},
+    colorscale:[[0,'#F5F5F7'],[0.5,'#004455'],[1,'#2563eb']],text:[[3,2,1,1],[2,1,2,0],[1,1,1,1],[2,1,1,0]],texttemplate:'%{text}',textfont:{size:10,color:'#fff'},
     colorbar:{title:'Projects',titlefont:{color:'rgba(148,163,184,0.6)',size:7},tickfont:{size:7,color:'rgba(148,163,184,0.6)'},thickness:8}}],
     TL('Project Density: Region × Contract Type'),CFG);
 
@@ -1222,15 +1222,15 @@ function initT7(){ACC=TABACC[7];
 
   // c89 Donut - accident cause
   NSPLOT('c89',[{type:'pie',values:D.causePct,labels:D.causeLbl,hole:0.45,
-    marker:{colors:['#b83d6b','#c75a24','#c28a14','#2563eb','#7258b7','rgba(148,163,184,0.7)'],line:{color:'#020508',width:1}},
+    marker:{colors:['#b83d6b','#c75a24','#c28a14','#2563eb','#7258b7','rgba(148,163,184,0.7)'],line:{color:'#E2E8F0',width:1}},
     textfont:{size:8.5,color:'#c3cede'}}],
     TL('Road Accident Causes (%)'),CFG);
 
   // c90 Horizontal bar - accident blackspot corridors
   NSPLOT('c90',[{type:'bar',orientation:'h',y:D.accCorridor,
     x:[420,380,340,312,290,268,240,214,198,182],
-    marker:{color:[420,380,340,312,290,268,240,214,198,182].map(v=>v>=350?'#b83d6b':v>=250?'#c75a24':'#c28a14'),line:{color:'#020508',width:0.5}},
-    text:[420,380,340,312,290,268,240,214,198,182].map(v=>v+' acc.'),textposition:'inside',textfont:{size:7.5,color:'#020508'}}],
+    marker:{color:[420,380,340,312,290,268,240,214,198,182].map(v=>v>=350?'#b83d6b':v>=250?'#c75a24':'#c28a14'),line:{color:'#E2E8F0',width:0.5}},
+    text:[420,380,340,312,290,268,240,214,198,182].map(v=>v+' acc.'),textposition:'inside',textfont:{size:7.5,color:'#E2E8F0'}}],
     TL('Top 10 Accident Blackspot Corridors',{yaxis:{tickfont:{size:8}},xaxis:{title:{text:'Accidents/yr',font:{size:9}}}}),CFG);
 
   // c91 Bar - fatalities by vehicle type
@@ -1242,7 +1242,7 @@ function initT7(){ACC=TABACC[7];
   // c92 Bar - fatalities by time of day
   NSPLOT('c92',[{type:'bar',x:['00-03','03-06','06-09','09-12','12-15','15-18','18-21','21-24'],
     y:[8.2,4.1,12.4,9.8,11.2,14.8,18.4,21.1],
-    marker:{color:['#b83d6b','#c75a24','#c28a14','#2563eb','#c28a14','#c75a24','#ff5330','#b83d6b'],line:{color:'#020508',width:0.5}},
+    marker:{color:['#b83d6b','#c75a24','#c28a14','#2563eb','#c28a14','#c75a24','#ff5330','#b83d6b'],line:{color:'#E2E8F0',width:0.5}},
     text:[8.2,4.1,12.4,9.8,11.2,14.8,18.4,21.1].map(v=>v+'%'),textposition:'outside',textfont:{size:8}}],
     TL('Accident Distribution by Time of Day (%)',{xaxis:{title:{text:'Hour (24hr)',font:{size:9}}},yaxis:{title:{text:'% of All Accidents',font:{size:9}}}}),CFG);
 
@@ -1278,7 +1278,7 @@ function initT7(){ACC=TABACC[7];
   // c96 Funnel - road safety enforcement pipeline
   NSPLOT('c96',[{type:'funnel',y:['Accidents Reported','Investigated','Charges Filed','Prosecuted','Fines Paid','Convictions'],
     x:[28420,18640,9820,4210,2840,1420],
-    marker:{color:['#b83d6b','#ff5330','#c75a24','#ffa63f','#c28a14','#278a50'],line:{color:'#020508',width:0.5}},
+    marker:{color:['#b83d6b','#ff5330','#c75a24','#ffa63f','#c28a14','#278a50'],line:{color:'#E2E8F0',width:0.5}},
     textinfo:'value+percent initial',textfont:{size:8.5},opacity:0.9}],
     TL('Road Safety Enforcement Pipeline (2025)',{yaxis:{tickfont:{size:8.5}}}),CFG);
 
@@ -1301,7 +1301,7 @@ function initT7(){ACC=TABACC[7];
   // c99 Bar - RSE compliance by measure type
   NSPLOT('c99',[{type:'bar',x:['Speed Humps','Guardrails','Road Signs','Line Marking','Lighting','Rumble Strips','Barrier Posts'],
     y:[82,64,71,58,42,76,68],
-    marker:{color:[82,64,71,58,42,76,68].map(v=>v>=75?'#278a50':v>=60?'#c28a14':'#b83d6b'),line:{color:'#020508',width:0.5}},
+    marker:{color:[82,64,71,58,42,76,68].map(v=>v>=75?'#278a50':v>=60?'#c28a14':'#b83d6b'),line:{color:'#E2E8F0',width:0.5}},
     text:[82,64,71,58,42,76,68].map(v=>v+'%'),textposition:'outside',textfont:{size:8}}],
     TL('Road Safety Engineering Compliance (% of Network)',{yaxis:{title:{text:'% Compliant',font:{size:9}},range:[0,110]},xaxis:{tickfont:{size:8.5}}}),CFG);
 
@@ -1310,7 +1310,7 @@ function initT7(){ACC=TABACC[7];
   const riskZ=riri.map(r=>spd.map(s=>Math.round(5+r*8+(s/50)*12+r*(s/50)*4)));
   NSPLOT('c100',[{type:'heatmap',x:spd,y:riri,z:riskZ,
     colorscale:[[0,'#278a50'],[0.35,'#c28a14'],[0.7,'#c75a24'],[1,'#b83d6b']],
-    text:riskZ,texttemplate:'%{text}',textfont:{size:9,color:'#020508'},
+    text:riskZ,texttemplate:'%{text}',textfont:{size:9,color:'#E2E8F0'},
     colorbar:{title:'Acc./yr',titlefont:{color:'rgba(148,163,184,0.6)',size:8},tickfont:{color:'rgba(148,163,184,0.6)',size:7},thickness:8}}],
     TL('Accident Risk Heatmap · Speed Limit × Roughness (IRI)',{xaxis:{title:{text:'Speed Limit (km/h)',font:{size:9}}},yaxis:{title:{text:'IRI (m/km)',font:{size:9}}}}),CFG);
 }

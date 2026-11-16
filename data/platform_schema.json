@@ -1693,7 +1693,7 @@
         {
           "name": "category",
           "type_definition": "TEXT",
-          "description": "OPRC / NDPIV / Vision2040 / Emergency",
+          "description": "OPRC / Priority / Vision2040 / Emergency",
           "is_primary": false
         }
       ]
