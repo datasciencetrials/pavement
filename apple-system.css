@@ -672,3 +672,61 @@ input:focus, select:focus, textarea:focus {
 .leaflet-container {
   background: #F1F5F9 !important;
 }
+
+
+/* === Tailwind Dark Utility Neutralizers for Apple Light Theme === */
+.text-white {
+  color: #0F172A !important;
+}
+
+.text-slate-200, .text-slate-300 {
+  color: #1E293B !important;
+}
+
+.text-slate-400, .text-slate-500 {
+  color: #475569 !important;
+}
+
+.bg-slate-800, .bg-slate-900, .bg-slate-950, [class*="bg-slate-800"], [class*="bg-slate-900"] {
+  background: #FFFFFF !important;
+  color: #0F172A !important;
+}
+
+.border-slate-700, .border-slate-800, [class*="border-slate-700"] {
+  border-color: #E2E8F0 !important;
+}
+
+/* Map legend light theme */
+[style*="bottom: 10px"][style*="left: 10px"],
+[style*="bottom:10px"][style*="left:10px"] {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important;
+  color: #0F172A !important;
+}
+
+[style*="bottom: 10px"][style*="left: 10px"] span,
+[style*="bottom:10px"][style*="left:10px"] span {
+  color: #1F2937 !important;
+  font-weight: 600 !important;
+}
+
+/* Charts SVG and recharts */
+.recharts-cartesian-grid line {
+  stroke: #E2E8F0 !important;
+}
+
+.recharts-text, .recharts-label {
+  fill: #64748B !important;
+  font-family: Arial, -apple-system, sans-serif !important;
+}
+
+.recharts-legend-item-text {
+  color: #0F172A !important;
+}
+
+.recharts-tooltip-wrapper {
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08)) !important;
+}
