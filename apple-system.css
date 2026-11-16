@@ -489,3 +489,50 @@ tr:hover td {
   color: #15803D !important;
   border-color: rgba(21, 128, 61, 0.25) !important;
 }
+
+/* Comprehensive Apple HIG Light Theme Overrides for NPMS Infographics & Dashboard */
+.npms-infographic-card,
+article.npms-infographic-card {
+  background: #FFFFFF !important;
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04) !important;
+  border-radius: 14px !important;
+}
+
+.npms-infographic-card h3,
+.npms-infographic-card h2,
+.npms-infographic-card strong,
+.npms-infographic-card b {
+  color: #0F172A !important;
+}
+
+.npms-infographic-card div,
+.npms-infographic-card span,
+.npms-infographic-card p {
+  color: inherit;
+}
+
+/* Big metric numbers in infographic cards */
+.npms-infographic-card div[style*="font-size: 42"],
+.npms-infographic-card div[style*="fontSize:42"],
+.npms-infographic-card div[style*="font-size: 27"],
+.npms-infographic-card div[style*="fontSize:27"] {
+  color: #0F172A !important;
+}
+
+/* Main Dashboard headings */
+h1, h2, h3, h4, .npms-title, [class*="title"] {
+  color: #0F172A !important;
+}
+
+/* Light container backgrounds */
+div[style*="background: #070b16"],
+div[style*="background:#070b16"],
+div[style*="background: rgb(7, 11, 22)"],
+div[style*="background: #0b0f18"],
+div[style*="background:#0b0f18"] {
+  background: #F5F5F7 !important;
+  color: #0F172A !important;
+}
