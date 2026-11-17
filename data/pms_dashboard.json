@@ -53,7 +53,7 @@
       "type": "stat",
       "unit": "km",
       "payload": {
-        "value": 21302,
+        "value": 21284.02,
         "paved_km": 6405.1,
         "unpaved_km": 14896.9,
         "network_extent": "100%"

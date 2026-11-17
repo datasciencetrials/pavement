@@ -4,7 +4,7 @@
   "kpis": [
     {
       "label": "Total National Network",
-      "value": "21,302 km",
+      "value": "21,284.02 km",
       "color": "#0071E3"
     },
     {
@@ -261,7 +261,7 @@
     ]
   },
   "insights": [
-    "National network: 21,302 km across 1023 links \u2014 30.1% paved, 69.9% unsealed.",
+    "National network: 21,284.02 km across 1023 links \u2014 30.1% paved, 69.9% unsealed.",
     "Condition: Good 7.1%, Fair 18.9%, Poor 74.0% \u2014 significant rehabilitation backlog.",
     "Class C roads dominate at 15,707 km (73.7%), mostly unpaved.",
     "Central region has densest paved network; North/East have highest share of unsealed surfaces.",

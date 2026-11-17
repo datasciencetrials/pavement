@@ -154,7 +154,7 @@ body.embedded .tabs{padding-top:14px}
 @media (max-width:1200px){.kpi-strip{grid-template-columns:repeat(4,1fr)}.g4{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr}}
 @media (max-width:700px){.kpi-strip{grid-template-columns:repeat(2,1fr)}.g2,.g3,.g4,.g12,.g21,.g13{grid-template-columns:1fr}}
 </style>
-<link rel="stylesheet" href="./apple-system.css?v=20261117-master-v90">
+<link rel="stylesheet" href="./apple-system.css?v=20261117-master-v92">
 </head>
 <body>
 <div class="rainbow"></div>
@@ -189,12 +189,12 @@ body.embedded .tabs{padding-top:14px}
 <!-- TAB 1: NETWORK OVERVIEW -->
 <div id="tab1" class="tab-panel active">
   <div class="stat-row">
-    <div class="stat-mini"><div class="sv">21,302 km</div><div class="sl">TOTAL NETWORK</div></div>
+    <div class="stat-mini"><div class="sv">21,284.02 km</div><div class="sl">TOTAL NETWORK</div></div>
     <div class="stat-mini" style="border-left-color:var(--g)"><div class="sv" style="color:var(--g)">6,406.69 km</div><div class="sl">PAVED (30.1%)</div></div>
     <div class="stat-mini" style="border-left-color:var(--o)"><div class="sv" style="color:var(--o)">14,877.33 km</div><div class="sl">UNPAVED (69.9%)</div></div>
     <div class="stat-mini" style="border-left-color:var(--pu)"><div class="sv" style="color:var(--pu)">6 REGIONS</div><div class="sl">GEOGRAPHIC COVERAGE</div></div>
-    <div class="stat-mini" style="border-left-color:var(--y)"><div class="sv" style="color:var(--y)">3 CLASSES</div><div class="sl">TRUNK / REGIONAL / DISTRICT</div></div>
-    <div class="stat-mini" style="border-left-color:var(--p)"><div class="sv" style="color:var(--p)">165 km</div><div class="sl">UNMAPPED GAP</div></div>
+    <div class="stat-mini" style="border-left-color:var(--y)"><div class="sv" style="color:var(--y)">3 CLASSES</div><div class="sl">CLASS A · B · C · EXPRESSWAYS</div></div>
+    <div class="stat-mini" style="border-left-color:var(--p)"><div class="sv" style="color:var(--p)">1,004</div><div class="sl">STRUCTURES (552B · 452C)</div></div>
   </div>
   <div class="section-hdr">NETWORK COMPOSITION · ANALYTICAL PERSPECTIVES</div>
   <div class="chart-grid g3">
@@ -451,14 +451,14 @@ setInterval(()=>{const n=new Date();document.getElementById('clk').textContent=n
 // ── SINGLE DATA MODEL (source of truth) ───────────────────────
 const D = {
   // NETWORK
-  total:21302, paved:6405, unpaved:14897,
+  total:21284.02, paved:6405, unpaved:14897,
   classKm:[4200,5800,11302], classPaved:[3360,2146,899], classLbl:['Class A Trunk','Class B Regional','Class C District'],
   surfKm:[5840,565,10240,4657], surfLbl:['Bituminous','Concrete','Gravel','Earth'],
   regKm:[4436,3920,4290,3000,3300,2356], regPaved:[1850,900,860,1280,1140,375],
   regUnpaved:[2586,3020,3430,1720,2160,1981],
   regLbl:['Central','Northern','Eastern','Western','Southern','North Eastern'],
   regCol:['#2563eb','#278a50','#c28a14','#7258b7','#b83d6b','#c75a24'],
-  netYrs:[2010,2012,2014,2016,2018,2020,2022,2024,2025], netKm:[18200,18800,19400,20100,20600,20900,21050,21200,21302],
+  netYrs:[2010,2012,2014,2016,2018,2020,2022,2024,2025], netKm:[18200,18800,19400,20100,20600,20900,21050,21200,21284.02],
   // CONDITION
   pavCond:[2242,2242,1281,640], unpavCond:[1490,4469,5959,2979],
   condLbl:['Good','Fair','Poor','Critical'], condCol:['#278a50','#c28a14','#c75a24','#b83d6b'],
@@ -559,9 +559,9 @@ function initT1(){ACC=TABACC[1];
   // c1 Sunburst - full hierarchy
   NSPLOT('c1',[{type:'sunburst',
     ids:['Total','Paved','Unpaved','Bitumen','Concrete','Gravel','Earth','GoodP','FairP','PoorP','CritP','GoodU','FairU','PoorU','CritU'],
-    labels:['21,302 km','Paved 6,406.69 km','Unpaved 14,877.33 km','Bitumen 5,840','Concrete 565','Gravel 10,240','Earth 4,657','Good 2,242','Fair 2,242','Poor 1,281','Crit 640','Good 1,490','Fair 4,469','Poor 5,959','Crit 2,979'],
+    labels:['21,284.02 km','Paved 6,406.69 km','Unpaved 14,877.33 km','Bitumen 5,840','Concrete 565','Gravel 10,240','Earth 4,657','Good 2,242','Fair 2,242','Poor 1,281','Crit 640','Good 1,490','Fair 4,469','Poor 5,959','Crit 2,979'],
     parents:['','Total','Total','Paved','Paved','Unpaved','Unpaved','Paved','Paved','Paved','Paved','Unpaved','Unpaved','Unpaved','Unpaved'],
-    values:[21302,6405,14897,5840,565,10240,4657,2242,2242,1281,640,1490,4469,5959,2979],
+    values:[21284.02,6405,14897,5840,565,10240,4657,2242,2242,1281,640,1490,4469,5959,2979],
     marker:{colors:['#2563eb','#278a50','#c75a24','#148da0','#24865a','#c25e2a','#8a4a26','#278a50','#c28a14','#c75a24','#b83d6b','#2b8a57','#c9a532','#d95f30','#c22461'],line:{color:'#0F172A',width:1}},
     textfont:{size:8}}],
     {title:{text:'Network Hierarchy',font:{color:'#2563eb',size:11,family:NSFONT},x:0.5},paper_bgcolor:'rgba(0,0,0,0)',margin:{t:32,r:0,b:0,l:0}},CFG);
@@ -569,9 +569,9 @@ function initT1(){ACC=TABACC[1];
   // c2 Treemap - by region + class
   NSPLOT('c2',[{type:'treemap',
     ids:['Net','Cen','Nor','Eas','Wes','Sou','NE','CenA','CenB','CenC','NorA','NorB','NorC','EasA','EasB','EasC','WesA','WesB','WesC','SouA','SouB','SouC','NEA','NEB','NEC'],
-    labels:['21,302km','Central 4,436','Northern 3,920','Eastern 4,290','Western 3,000','Southern 3,300','N.Eastern 2,356','A:1,050','B:1,300','C:2,086','A:720','B:1,100','C:2,100','A:800','B:1,200','C:2,290','A:640','B:900','C:1,460','A:620','B:850','C:1,830','A:370','B:450','C:1,536'],
+    labels:['21,284.02 km','Central 4,436','Northern 3,920','Eastern 4,290','Western 3,000','Southern 3,300','N.Eastern 2,356','A:1,050','B:1,300','C:2,086','A:720','B:1,100','C:2,100','A:800','B:1,200','C:2,290','A:640','B:900','C:1,460','A:620','B:850','C:1,830','A:370','B:450','C:1,536'],
     parents:['','Net','Net','Net','Net','Net','Net','Cen','Cen','Cen','Nor','Nor','Nor','Eas','Eas','Eas','Wes','Wes','Wes','Sou','Sou','Sou','NE','NE','NE'],
-    values:[21302,4436,3920,4290,3000,3300,2356,1050,1300,2086,720,1100,2100,800,1200,2290,640,900,1460,620,850,1830,370,450,1536],
+    values:[21284.02,4436,3920,4290,3000,3300,2356,1050,1300,2086,720,1100,2100,800,1200,2290,640,900,1460,620,850,1830,370,450,1536],
     marker:{colorscale:[[0,'#001a1a'],[0.5,'#006666'],[1,'#2563eb']],line:{color:'#0F172A',width:1}},
     textfont:{size:8}}],
     {title:{text:'Network by Region & Class',font:{color:'#2563eb',size:11,family:NSFONT},x:0.5},paper_bgcolor:'rgba(0,0,0,0)',margin:{t:32,r:0,b:0,l:0}},CFG);
@@ -669,7 +669,7 @@ function initT1(){ACC=TABACC[1];
   // c15 Waterfall - network composition breakdown
   NSPLOT('c15',[{type:'waterfall',orientation:'v',
     x:['Total','−Class C','−Class B','=Class A','−Earth','−Gravel','=Paved'],
-    y:[21302,-11302,-5800,4200,-4657,-10240,6405],
+    y:[21284.02,-11302,-5800,4200,-4657,-10240,6405],
     measure:['absolute','relative','relative','total','relative','relative','total'],
     connector:{line:{color:'rgba(148,163,184,0.25)',width:1}},
     decreasing:{marker:{color:'#c75a24',line:{color:'#c2532a',width:0.5}}},
@@ -794,7 +794,7 @@ function initT2(){ACC=TABACC[2];
 
   // c30 Funnel - treatment pipeline
   NSPLOT('c30',[{type:'funnel',y:['Surveyed Links','Condition Assessed','Treatment Planned','Budgeted','Under Contract','Completed FY25'],
-    x:[21302,20840,8420,4200,1240,428],
+    x:[21284.02,20840,8420,4200,1240,428],
     marker:{color:['#2563eb','#148da0','#00aacc','#c28a14','#c75a24','#278a50'],line:{color:'#0F172A',width:0.5}},
     textinfo:'value+percent initial',textfont:{size:8.5,color:'#c3cede'},opacity:0.9}],
     TL('Pavement Treatment Pipeline FY25/26',{funnelmode:'stack',yaxis:{tickfont:{size:8.5}}}),CFG);

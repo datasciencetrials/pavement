@@ -1,9 +1,9 @@
 {
   "total_links": 1023,
-  "total_length_km": 21302.0,
-  "official_total_km": 21302.0,
-  "paved_km": 6405.0,
-  "unpaved_km": 14897.0,
+  "total_length_km": 21284.02,
+  "official_total_km": 21284.02,
+  "paved_km": 6406.69,
+  "unpaved_km": 14877.33,
   "paved_pct": 30.1,
   "ducar_km": 89736.0,
   "grand_total_km": 111038.0,
@@ -26,6 +26,6 @@
     "bms_rf": 0.988,
     "ducar_rf": 0.62
   },
-  "timestamp": "2026-08-20T00:00:00",
+  "timestamp": "17/11/2026",
   "data_vintage": "DNR / National Roads Authority August 2026"
 }
