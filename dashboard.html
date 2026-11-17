@@ -190,8 +190,8 @@ body.embedded .tabs{padding-top:14px}
 <div id="tab1" class="tab-panel active">
   <div class="stat-row">
     <div class="stat-mini"><div class="sv">21,302 km</div><div class="sl">TOTAL NETWORK</div></div>
-    <div class="stat-mini" style="border-left-color:var(--g)"><div class="sv" style="color:var(--g)">6,405 km</div><div class="sl">PAVED (30%)</div></div>
-    <div class="stat-mini" style="border-left-color:var(--o)"><div class="sv" style="color:var(--o)">14,897 km</div><div class="sl">UNPAVED (70%)</div></div>
+    <div class="stat-mini" style="border-left-color:var(--g)"><div class="sv" style="color:var(--g)">6,406.69 km</div><div class="sl">PAVED (30.1%)</div></div>
+    <div class="stat-mini" style="border-left-color:var(--o)"><div class="sv" style="color:var(--o)">14,877.33 km</div><div class="sl">UNPAVED (69.9%)</div></div>
     <div class="stat-mini" style="border-left-color:var(--pu)"><div class="sv" style="color:var(--pu)">6 REGIONS</div><div class="sl">GEOGRAPHIC COVERAGE</div></div>
     <div class="stat-mini" style="border-left-color:var(--y)"><div class="sv" style="color:var(--y)">3 CLASSES</div><div class="sl">TRUNK / REGIONAL / DISTRICT</div></div>
     <div class="stat-mini" style="border-left-color:var(--p)"><div class="sv" style="color:var(--p)">165 km</div><div class="sl">UNMAPPED GAP</div></div>
@@ -559,7 +559,7 @@ function initT1(){ACC=TABACC[1];
   // c1 Sunburst - full hierarchy
   NSPLOT('c1',[{type:'sunburst',
     ids:['Total','Paved','Unpaved','Bitumen','Concrete','Gravel','Earth','GoodP','FairP','PoorP','CritP','GoodU','FairU','PoorU','CritU'],
-    labels:['21,302 km','Paved 6,405','Unpaved 14,897','Bitumen 5,840','Concrete 565','Gravel 10,240','Earth 4,657','Good 2,242','Fair 2,242','Poor 1,281','Crit 640','Good 1,490','Fair 4,469','Poor 5,959','Crit 2,979'],
+    labels:['21,302 km','Paved 6,406.69 km','Unpaved 14,877.33 km','Bitumen 5,840','Concrete 565','Gravel 10,240','Earth 4,657','Good 2,242','Fair 2,242','Poor 1,281','Crit 640','Good 1,490','Fair 4,469','Poor 5,959','Crit 2,979'],
     parents:['','Total','Total','Paved','Paved','Unpaved','Unpaved','Paved','Paved','Paved','Paved','Unpaved','Unpaved','Unpaved','Unpaved'],
     values:[21302,6405,14897,5840,565,10240,4657,2242,2242,1281,640,1490,4469,5959,2979],
     marker:{colors:['#2563eb','#278a50','#c75a24','#148da0','#24865a','#c25e2a','#8a4a26','#278a50','#c28a14','#c75a24','#b83d6b','#2b8a57','#c9a532','#d95f30','#c22461'],line:{color:'#0F172A',width:1}},
@@ -653,7 +653,7 @@ function initT1(){ACC=TABACC[1];
     TL('Condition Score by Region & Class',{barmode:'group',yaxis:{title:{text:'Score (0–100)',font:{size:9}},range:[0,100]}}),CFG);
 
   // c13 Pie - paved vs unpaved split
-  NSPLOT('c13',[{type:'pie',values:[6405,14897],labels:['Paved 6,405 km','Unpaved 14,897 km'],
+  NSPLOT('c13',[{type:'pie',values:[6406.69,14877.33],labels:['Paved 6,406.69 km','Unpaved 14,877.33 km'],
     marker:{colors:['#2563eb','#c75a24'],line:{color:'#0F172A',width:2}},
     pull:[0.05,0],hole:0.5,textfont:{size:8.5,color:'#c3cede'},
     texttemplate:'%{label}<br>%{percent}'}],
@@ -675,7 +675,7 @@ function initT1(){ACC=TABACC[1];
     decreasing:{marker:{color:'#c75a24',line:{color:'#c2532a',width:0.5}}},
     increasing:{marker:{color:'#2563eb',line:{color:'#00aacc',width:0.5}}},
     totals:{marker:{color:'#278a50',line:{color:'#00cc44',width:0.5}}},
-    text:['21,302','−11,302','−5,800','4,200','−4,657','−10,240','6,405'],textposition:'outside',textfont:{size:8}}],
+    text:['21,302','−11,302','−5,800','4,200','−4,657','−10,240','6,406.69'],textposition:'outside',textfont:{size:8}}],
     TL('Network Composition Waterfall (km)',{yaxis:{title:{text:'km',font:{size:9}}}}),CFG);
 }
 </script>
