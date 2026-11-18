@@ -756,3 +756,9 @@ body > .container, body > .wrapper, body > main, .page-shell, .app-container,
   padding-right: 16px !important;
   box-sizing: border-box !important;
 }
+
+/* v113: Replace dark Cesium space backdrop with clean light schematic canvas & clear top-right floating nav */
+.cesium-widget canvas, .cesium-viewer {
+  background: #F8FAFC !important;
+  filter: brightness(1.08) contrast(0.95);
+}
