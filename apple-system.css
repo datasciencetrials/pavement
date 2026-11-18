@@ -762,3 +762,6 @@ body > .container, body > .wrapper, body > main, .page-shell, .app-container,
   background: #F8FAFC !important;
   filter: brightness(1.08) contrast(0.95);
 }
+
+.mc-shell { background: #F5F5F7 !important; color: #0F172A !important; }
+.mc-readiness { background: #FFFFFF !important; color: #0F172A !important; border: 1px solid #E2E8F0 !important; }
