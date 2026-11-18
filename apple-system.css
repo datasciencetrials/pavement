@@ -765,3 +765,5 @@ body > .container, body > .wrapper, body > main, .page-shell, .app-container,
 
 .mc-shell { background: #F5F5F7 !important; color: #0F172A !important; }
 .mc-readiness { background: #FFFFFF !important; color: #0F172A !important; border: 1px solid #E2E8F0 !important; }
+
+.cesium-credit-textContainer, .cesium-credit-textContainer *, .structural-layers-legend * { color: #0F172A !important; }
