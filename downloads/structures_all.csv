@@ -901,27 +901,27 @@ CUL-C915,Culvert C915,culvert,Kidoko - Kachonga,C838_Link02,C,0,0.94015,34.06581
 CUL-C917,Culvert C917,culvert,Buseta - Bugiri,C891_Link01,C,0,0.91622,34.35997,4.0,1,1,0,6.0,Corrugated Steel,Stream,Unsealed,0,3,2024-04-02,Mbale,Eastern,Mbale,C,,7
 CUL-C918,Culvert C918,culvert,Buseta - Bugiri,C891_Link01,C,0,0.90773,34.35965,5.5,1,1,0,6.0,Corrugated Steel,Stream,Unsealed,0,2,2023-10-05,Mbale,Eastern,Mbale,C,,7
 CUL-C919,Culvert C919,culvert,Buseta - Bugiri,C891_Link01,C,0,0.93077,34.295979,2.5,1,1,0,6.0,Corrugated Steel,Stream,Unsealed,0,4,2023-10-05,Mbale,Eastern,Mbale,C,,8
-CUL-CM20,Culvert CM20,culvert,Kampala NorthernBypass,M20,M,0,0.3521,32.5897,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2008,4,2022-11-09,Kampala,Central,Kampala,M,,8
-CUL-CM20-369,Culvert CM20,culvert,Kampala NorthernBypass,M20,M,0,0.3523,32.572,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2008,3,2023-03-09,Kampala,Central,Kampala,M,,8
-CUL-CM20-370,Culvert CM20,culvert,Kampala NorthernBypass,M20,M,0,0.3523,32.572,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2008,3,2023-06-07,Kampala,Central,Kampala,M,,8
-CUL-CM20-371,Culvert CM20,culvert,Kampala NorthernBypass,M20,M,0,0.3505,32.5665,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2008,3,2023-04-08,Kampala,Central,Kampala,M,,8
-CUL-CM3,Culvert CM3,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.2691,32.5206,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-06-07,Kampala,Central,Kampala,M,,8
-CUL-CM3-373,Culvert CM3,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.2545,32.5226,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,4,2023-12-04,Kampala,Central,Kampala,M,,8
-CUL-CM3-374,Culvert CM3,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.24,32.5241,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-08-06,Kampala,Central,Kampala,M,,8
-CUL-CM3-375,Culvert CM3,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.2408,32.5241,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-09-05,Kampala,Central,Kampala,M,,8
-CUL-CM3-376,Culvert CM3,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.24,32.5241,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-11-04,Kampala,Central,Kampala,M,,8
-CUL-CM3-377,Culvert CM3,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.2306,32.5241,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,4,2023-08-06,Kampala,Central,Kampala,M,,8
-CUL-CM3-378,Culvert CM3,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.2259,32.5268,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,4,2023-12-04,Kampala,Central,Kampala,M,,8
-CUL-CM3-379,Culvert CM3,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.2128,32.531,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,4,2023-10-05,Kampala,Central,Kampala,M,,8
-CUL-CM3-380,Culvert CM3,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.2128,32.531,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-07-07,Kampala,Central,Kampala,M,,8
-CUL-CM3-381,Culvert CM3,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.2012,32.5269,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2022-09-10,Kampala,Central,Kampala,M,,8
-CUL-CM3-382,Culvert CM3,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.1882,32.525,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2024-03-03,Kampala,Central,Kampala,M,,8
-CUL-CM3-383,Culvert CM3,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.1808,32.5206,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-09-05,Kampala,Central,Kampala,M,,8
-CUL-CM3-384,Culvert CM3,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.1691,32.5147,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-02-07,Kampala,Central,Kampala,M,,8
-CUL-CM3-385,Culvert CM3,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.1641,32.5134,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,4,2023-03-09,Kampala,Central,Kampala,M,,8
-CUL-CM3-386,Culvert CM3,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.1542,32.5114,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-09-05,Kampala,Central,Kampala,M,,8
-CUL-CM3-387,Culvert CM3,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.1391,32.5101,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-03-09,Kampala,Central,Kampala,M,,8
-CUL-CMunyoyoSpur,Culvert CMunyoyo Spur,culvert,Kajjansi Interchange Slip 1,M3Int2_S1,M,0,0.2158,32.5319,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,4,2022-07-12,Kampala,Central,Kampala,M,,8
+CUL-C022,Culvert C022,culvert,Kampala NorthernBypass,M20,M,0,0.3521,32.5897,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2008,4,2022-11-09,Kampala,Central,Kampala,M,,8
+CUL-C023-369,Culvert C023,culvert,Kampala NorthernBypass,M20,M,0,0.3523,32.572,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2008,3,2023-03-09,Kampala,Central,Kampala,M,,8
+CUL-C024-370,Culvert C024,culvert,Kampala NorthernBypass,M20,M,0,0.3523,32.572,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2008,3,2023-06-07,Kampala,Central,Kampala,M,,8
+CUL-C025-371,Culvert C025,culvert,Kampala NorthernBypass,M20,M,0,0.3505,32.5665,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2008,3,2023-04-08,Kampala,Central,Kampala,M,,8
+CUL-C026,Culvert C026,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.2691,32.5206,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-06-07,Kampala,Central,Kampala,M,,8
+CUL-C027-373,Culvert C027,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.2545,32.5226,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,4,2023-12-04,Kampala,Central,Kampala,M,,8
+CUL-C028-374,Culvert C028,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.24,32.5241,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-08-06,Kampala,Central,Kampala,M,,8
+CUL-C029-375,Culvert C029,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.2408,32.5241,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-09-05,Kampala,Central,Kampala,M,,8
+CUL-C030-376,Culvert C030,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.24,32.5241,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-11-04,Kampala,Central,Kampala,M,,8
+CUL-C031-377,Culvert C031,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.2306,32.5241,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,4,2023-08-06,Kampala,Central,Kampala,M,,8
+CUL-C032-378,Culvert C032,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.2259,32.5268,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,4,2023-12-04,Kampala,Central,Kampala,M,,8
+CUL-C033-379,Culvert C033,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.2128,32.531,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,4,2023-10-05,Kampala,Central,Kampala,M,,8
+CUL-C034-380,Culvert C034,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.2128,32.531,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-07-07,Kampala,Central,Kampala,M,,8
+CUL-C035-381,Culvert C035,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.2012,32.5269,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2022-09-10,Kampala,Central,Kampala,M,,8
+CUL-C036-382,Culvert C036,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.1882,32.525,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2024-03-03,Kampala,Central,Kampala,M,,8
+CUL-C037-383,Culvert C037,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.1808,32.5206,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-09-05,Kampala,Central,Kampala,M,,8
+CUL-C038-384,Culvert C038,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.1691,32.5147,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-02-07,Kampala,Central,Kampala,M,,8
+CUL-C039-385,Culvert C039,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.1641,32.5134,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,4,2023-03-09,Kampala,Central,Kampala,M,,8
+CUL-C040-386,Culvert C040,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.1542,32.5114,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-09-05,Kampala,Central,Kampala,M,,8
+CUL-C041-387,Culvert C041,culvert,Kampala - Entebbe Expressway,M3_Link01,M,0,0.1391,32.5101,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,5,2023-03-09,Kampala,Central,Kampala,M,,8
+CUL-CMunyoyoSpur,Culvert C042,culvert,Kajjansi Interchange Slip 1,M3Int2_S1,M,0,0.2158,32.5319,3.0,1,1,0,6.0,Reinforced Concrete,Stream,Bituminous,2018,4,2022-07-12,Kampala,Central,Kampala,M,,8
 CUL-C001,Culvert C001,culvert,Kasangati - Kyaliwajala,C194_Link02,C,13.574,-0.41367,32.62708,1.2,1,1,0,6.0,Corrugated Steel,Stream,Unsealed,,4,2024-02-02,Kampala,Central,Kampala,C,,
 CUL-C156,Culvert C156,culvert,Nsiika -  Bihanga -Katerera(Ishaka T/C),C416_Link02,C,42.2000007629395,0.2637,30.32597,1.2,1,1,0,6.0,Corrugated Steel,Stream,Unsealed,,4,2023-05-08,Ibanda,Southern,Ibanda,C,,
 CUL-C196,Culvert C196,culvert,Kisinga-Kyarumba-Kibirizi,C513_Link02,C,22.3,-0.11627,29.95245,2.5,1,1,0,6.0,Corrugated Steel,Stream,Unsealed,,4,2022-08-11,Kasese,Southern,Kasese,C,,
