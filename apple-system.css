@@ -767,3 +767,5 @@ body > .container, body > .wrapper, body > main, .page-shell, .app-container,
 .mc-readiness { background: #FFFFFF !important; color: #0F172A !important; border: 1px solid #E2E8F0 !important; }
 
 .cesium-credit-textContainer, .cesium-credit-textContainer *, .structural-layers-legend * { color: #0F172A !important; }
+
+.leaflet-control-attribution, .leaflet-control-attribution a, [aria-label*="attribution" i], button[title*="attribution" i] { color: #0F172A !important; background: rgba(255,255,255,0.92) !important; }
