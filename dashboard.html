@@ -11,8 +11,8 @@
 :root{
   --c:#2563eb;--g:#278a50;--y:#c28a14;--o:#c75a24;--p:#b83d6b;--r:#b83d6b;
   --pu:#7258b7;--t:#168a72;--b:#4d9fff;
-  --ink:#111827;--slate:#4b5563;--slate-dim:#64748b;
-  --void:#f4f6f8;--bd:#cbd5e1;
+  --ink:#0F172A;--slate:#4b5563;--slate-dim:#64748b;
+  --void:#F5F5F7;--bd:#E2E8F0;
 }
 html{scroll-behavior:smooth}
 body{
@@ -29,36 +29,36 @@ body{
 /* ── Rainbow signature bar (Network Story) ── */
 .rainbow{position:sticky;top:0;z-index:120;height:3px;
   background:linear-gradient(90deg,#b83d6b,#7258b7,#4d9fff,#2563eb,#278a50,#c28a14,#c75a24);
-  box-shadow:0 0 18px rgba(185,103,255,.5)}
+  box-shadow:0 0 18px rgba(124,58,237,.5)}
 
-/* ── TOPBAR — glass ── */
+/* ── TOPBAR - glass ── */
 .topbar{background:rgba(255,255,255,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
   border-bottom:1px solid #cbd5e1;padding:12px 22px;
   display:flex;align-items:center;gap:16px;position:sticky;top:3px;z-index:100}
 .logo{display:flex;align-items:center;gap:12px}
-.logo img{height:34px;object-fit:contain;filter:drop-shadow(0 0 10px rgba(0,245,255,.25))}
+.logo img{height:34px;object-fit:contain;filter:drop-shadow(0 0 10px rgba(0,113,227,.25))}
 .logo-txt{line-height:1.25}
 .logo-txt .t1{font-size:14px;font-weight:900;letter-spacing:.2em;
   background:linear-gradient(90deg,#2563eb,#7258b7);-webkit-background-clip:text;background-clip:text;
   -webkit-text-fill-color:transparent;color:transparent;
-  filter:drop-shadow(0 0 12px rgba(0,245,255,.35))}
+  filter:drop-shadow(0 0 12px rgba(0,113,227,.35))}
 .logo-txt .t2{color:var(--slate-dim);font-size:9px;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
 .topbar-mid{flex:1;text-align:center}
 .topbar-mid .sys{color:var(--slate);font-size:10.5px;font-weight:800;letter-spacing:.16em}
 .topbar-mid .ts{color:var(--slate-dim);font-size:9.5px;margin-top:2px;font-variant-numeric:tabular-nums}
 .topbar-right{display:flex;align-items:center;gap:10px;font-size:9.5px;color:var(--slate-dim);font-weight:600}
 .live-dot{width:7px;height:7px;border-radius:50%;background:var(--g);animation:pulse 1.5s infinite}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(0,255,136,.6)}50%{box-shadow:0 0 0 6px rgba(0,255,136,0)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(22,163,74,.6)}50%{box-shadow:0 0 0 6px rgba(22,163,74,0)}}
 
-/* ── KPI STRIP — glow tiles ── */
+/* ── KPI STRIP - glow tiles ── */
 .kpi-strip{display:grid;grid-template-columns:repeat(8,1fr);gap:10px;padding:14px 22px;
   border-bottom:1px solid rgba(255,255,255,.05)}
 .kpi-card{position:relative;background:#fff;
   border:1px solid #d5dbe3;border-radius:14px;padding:12px 14px;cursor:default;
   box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
   transition:transform .25s,box-shadow .25s,border-color .25s}
-.kpi-card:hover{transform:translateY(-2px);border-color:rgba(0,245,255,.35);
-  box-shadow:0 0 28px rgba(0,245,255,.12),inset 0 1px 0 rgba(255,255,255,.05)}
+.kpi-card:hover{transform:translateY(-2px);border-color:rgba(0,113,227,.35);
+  box-shadow:0 0 28px rgba(0,113,227,.12),inset 0 1px 0 rgba(255,255,255,.05)}
 .kpi-card .lbl{color:var(--slate);font-size:8.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
 .kpi-card .val{font-size:21px;font-weight:900;letter-spacing:-.5px;line-height:1;
   font-variant-numeric:tabular-nums;text-shadow:0 0 18px currentColor}
@@ -66,31 +66,31 @@ body{
 .kpi-card .chg{font-size:8.5px;margin-top:2px;font-weight:700}
 .chg.up{color:var(--g)}.chg.down{color:var(--r)}.chg.warn{color:var(--y)}
 
-/* ── TABS — neon pill chips, per-tab accent ── */
+/* ── TABS - neon pill chips, per-tab accent ── */
 .tabs{display:flex;gap:8px;padding:12px 22px;background:#fff;
   border-bottom:1px solid #cbd5e1;overflow-x:auto}
 .tab-btn{--acc:148,163,184;padding:8px 16px;font-size:10px;font-weight:800;letter-spacing:.1em;
-  text-transform:uppercase;color:rgba(148,163,184,.6);
+  text-transform:uppercase;color:#475569;
   border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);
   border-radius:10px;cursor:pointer;white-space:nowrap;font-family:inherit;transition:all .2s}
 .tab-btn:hover{color:rgb(var(--acc));border-color:rgba(var(--acc),.4);background:rgba(var(--acc),.07)}
 .tab-btn.active{color:rgb(var(--acc));border-color:rgba(var(--acc),.55);background:rgba(var(--acc),.12);
   box-shadow:0 0 22px rgba(var(--acc),.22),inset 0 1px 0 rgba(255,255,255,.06);
   text-shadow:0 0 10px rgba(var(--acc),.6)}
-.tab-btn:nth-child(1){--acc:0,245,255}
-.tab-btn:nth-child(2){--acc:0,255,136}
-.tab-btn:nth-child(3){--acc:255,210,63}
-.tab-btn:nth-child(4){--acc:185,103,255}
-.tab-btn:nth-child(5){--acc:255,107,53}
-.tab-btn:nth-child(6){--acc:0,212,170}
-.tab-btn:nth-child(7){--acc:255,45,120}
+.tab-btn:nth-child(1){--acc:0,113,227}
+.tab-btn:nth-child(2){--acc:22,163,74}
+.tab-btn:nth-child(3){--acc:217,119,6}
+.tab-btn:nth-child(4){--acc:124,58,237}
+.tab-btn:nth-child(5){--acc:220,38,38}
+.tab-btn:nth-child(6){--acc:13,148,136}
+.tab-btn:nth-child(7){--acc:190,24,93}
 
-/* ── TAB PANELS — accent inheritance ── */
+/* ── TAB PANELS - accent inheritance ── */
 .tab-panel{display:none;padding:18px 22px 60px;animation:fadein .4s ease}
 .tab-panel.active{display:block}
 @keyframes fadein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-#tab1{--acc:0,245,255}#tab2{--acc:0,255,136}#tab3{--acc:255,210,63}#tab4{--acc:185,103,255}
-#tab5{--acc:255,107,53}#tab6{--acc:0,212,170}#tab7{--acc:255,45,120}
+#tab1{--acc:0,113,227}#tab2{--acc:22,163,74}#tab3{--acc:217,119,6}#tab4{--acc:124,58,237}
+#tab5{--acc:220,38,38}#tab6{--acc:13,148,136}#tab7{--acc:190,24,93}
 
 .section-hdr{position:relative;color:rgb(var(--acc));font-size:10px;font-weight:900;
   letter-spacing:.16em;text-transform:uppercase;margin:6px 0 16px;padding-bottom:8px;
@@ -98,7 +98,7 @@ body{
 .section-hdr::after{content:'';position:absolute;left:0;bottom:0;height:1px;width:100%;
   background:linear-gradient(90deg,rgba(var(--acc),.55),rgba(var(--acc),.08) 55%,transparent)}
 
-/* ── CHART GRID + PANELS — Network Story cards ── */
+/* ── CHART GRID + PANELS - Network Story cards ── */
 .chart-grid{display:grid;gap:14px;margin-bottom:16px}
 .g2{grid-template-columns:1fr 1fr}
 .g3{grid-template-columns:1fr 1fr 1fr}
@@ -115,15 +115,15 @@ body{
 .chart-box:hover{transform:translateY(-3px) scale(1.004);border-color:rgba(var(--acc),.5);
   box-shadow:0 0 42px rgba(var(--acc),.18),0 14px 44px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.05)}
 .chart-box .ch-lbl{position:absolute;top:0;left:0;right:0;
-  background:linear-gradient(180deg,rgba(2,5,8,.92),transparent);padding:6px 12px 14px;z-index:1;pointer-events:none}
+  background:linear-gradient(180deg,rgba(255,255,255,0.95),transparent);padding:6px 12px 14px;z-index:1;pointer-events:none}
 .chart-box .ch-lbl span{color:rgb(var(--acc));font-size:9.5px;font-weight:800;letter-spacing:.08em}
 .chart-box .ch-lbl small{color:var(--slate-dim);font-size:8.5px;margin-left:6px}
 
 .chart-h1{height:200px}.chart-h2{height:260px}.chart-h3{height:320px}.chart-h4{height:400px}.chart-h5{height:480px}
 
-/* ── STAT ROW — asset cards ── */
+/* ── STAT ROW - asset cards ── */
 .stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:16px}
-.stat-mini{background:linear-gradient(145deg,rgba(var(--acc),.09) 0%,rgba(2,5,8,.8) 70%);
+.stat-mini{background:linear-gradient(145deg,rgba(var(--acc),.09) 0%,rgba(255,255,255,0.96) 70%);
   border:1px solid rgba(var(--acc),.2);border-left:3px solid rgb(var(--acc));
   border-radius:12px;padding:12px 14px;box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
   transition:transform .25s,box-shadow .25s}
@@ -142,9 +142,9 @@ body{
 
 /* ── SCROLLBAR ── */
 ::-webkit-scrollbar{width:6px;height:6px}
-::-webkit-scrollbar-track{background:rgba(6,13,24,.5)}
-::-webkit-scrollbar-thumb{background:rgba(0,245,255,.22);border-radius:3px}
-::-webkit-scrollbar-thumb:hover{background:rgba(0,245,255,.4)}
+::-webkit-scrollbar-track{background:rgba(245,245,247,0.9)}
+::-webkit-scrollbar-thumb{background:rgba(0,113,227,.22);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:rgba(0,113,227,.4)}
 
 /* ── EMBEDDED MODE (inside platform iframe: shell already has a header) ── */
 body.embedded .rainbow,body.embedded .topbar{display:none}
@@ -455,7 +455,7 @@ body > .container, body > .wrapper, body > main, .page-shell, .app-container,
   <div class="chart-grid"><div class="chart-box c3d"><div class="chart-h2" id="c100"></div></div></div>
 </div>
 <script>
-// ── EMBEDDED MODE — hide dashboard chrome when framed by the platform ──
+// ── EMBEDDED MODE - hide dashboard chrome when framed by the platform ──
 try{if(window.self!==window.top)document.body.classList.add('embedded');}catch(e){document.body.classList.add('embedded');}
 
 // ── CLOCK ─────────────────────────────────────────────────────
@@ -524,7 +524,7 @@ const D = {
 
 // ── NETWORK STORY THEME · CHART LAYOUT TEMPLATE ────────────────
 const CFG={responsive:true,displayModeBar:false};
-// Staggered render queue — one chart per animation frame keeps the page responsive
+// Staggered render queue - one chart per animation frame keeps the page responsive
 let _plotQ=Promise.resolve();
 const NSPLOT=(id,data,layout,cfg)=>{_plotQ=_plotQ.then(()=>{const el=document.getElementById(id);if(!el)return;return Plotly.newPlot(el,data,layout,cfg).then(()=>new Promise(r=>requestAnimationFrame(r)));}).catch(e=>console.error('chart '+id+' failed:',e));return _plotQ;};
  const NSFONT="Arial,sans-serif";
@@ -567,7 +567,7 @@ function showTab(n){
 }
 
 // ══════════════════════════════════════════════════════════════
-// TAB 1 — NETWORK OVERVIEW (c1–c15)
+// TAB 1 - NETWORK OVERVIEW (c1-c15)
 // ══════════════════════════════════════════════════════════════
 function initT1(){ACC=TABACC[1];
   // c1 Sunburst - full hierarchy
@@ -598,7 +598,7 @@ function initT1(){ACC=TABACC[1];
   ].slice(0,2),
   TL('Road Network by Region (km)',{barmode:'stack',xaxis:{title:{text:'Region',font:{size:9}}},yaxis:{title:{text:'Kilometres',font:{size:9}}}}),CFG);
 
-  // c4 Bubble — road segments: location & traffic (2D)
+  // c4 Bubble - road segments: location & traffic (2D)
   const n=80,lats=[],lngs=[],aadts=[],iri=[],cond=[];
   for(let i=0;i<n;i++){lats.push(-1.5+Math.random()*5);lngs.push(29.5+Math.random()*5);aadts.push(500+Math.random()*18000);iri.push(1.5+Math.random()*8);cond.push(['Good','Fair','Poor','Critical'][Math.floor(Math.random()*4)]);}
   NSPLOT('c4',[{type:'scatter',mode:'markers',x:lngs,y:lats,
@@ -609,13 +609,13 @@ function initT1(){ACC=TABACC[1];
     text:cond,hovertemplate:'Lng: %{x:.2f}<br>Lat: %{y:.2f}<br>IRI: %{marker.color:.1f}<br>%{text}<extra></extra>'}],
     TL('Road Segments · Location & Traffic (size = AADT, colour = IRI)',{xaxis:{title:{text:'Longitude',font:{size:9}}},yaxis:{title:{text:'Latitude',font:{size:9}}}}),CFG);
 
-  // c5 Heatmap — condition score: region × class (2D)
+  // c5 Heatmap - condition score: region × class (2D)
   const z=[[80,62,45],[70,55,38],[72,58,40],[75,60,42],[78,61,44],[65,50,34]];
   NSPLOT('c5',[{type:'heatmap',z,x:['Class A','Class B','Class C'],y:D.regLbl,
     colorscale:[[0,'#b83d6b'],[0.33,'#c75a24'],[0.66,'#c28a14'],[1,'#278a50']],
     text:z,texttemplate:'%{text}',textfont:{size:12,color:'#0F172A'},
     colorbar:{title:'Score',titlefont:{color:'rgba(148,163,184,0.6)',size:8},tickfont:{color:'rgba(148,163,184,0.6)',size:7},thickness:8}}],
-    TL('Condition Score · Region × Class (0–100)'),CFG);
+    TL('Condition Score · Region × Class (0-100)'),CFG);
 
   // c6 Pie - surface type
   NSPLOT('c6',[pie(D.surfKm,D.surfLbl,['#2563eb','#00aacc','#c75a24','#c2532a'])],
@@ -656,15 +656,15 @@ function initT1(){ACC=TABACC[1];
     TL('Network Length by Region',{barmode:'overlay',xaxis:{title:{text:'km',font:{size:9}}}}),CFG);
 
   // c11 Line - network growth
-  NSPLOT('c11',[line(D.netYrs,D.netKm,'Total Network','#2563eb',{fill:'tozeroy',fillcolor:'rgba(0,245,255,0.06)'}),
-    line(D.netYrs,[5200,5600,5800,5900,6100,6200,6300,6380,6405],'Paved','#278a50',{fill:'tozeroy',fillcolor:'rgba(0,255,136,0.04)'})],
-    TL('Network Growth 2010–2025 (km)',{yaxis:{title:{text:'km',font:{size:9}}},xaxis:{title:{text:'Year',font:{size:9}}}}),CFG);
+  NSPLOT('c11',[line(D.netYrs,D.netKm,'Total Network','#2563eb',{fill:'tozeroy',fillcolor:'rgba(0,113,227,0.06)'}),
+    line(D.netYrs,[5200,5600,5800,5900,6100,6200,6300,6380,6405],'Paved','#278a50',{fill:'tozeroy',fillcolor:'rgba(22,163,74,0.04)'})],
+    TL('Network Growth 2010-2025 (km)',{yaxis:{title:{text:'km',font:{size:9}}},xaxis:{title:{text:'Year',font:{size:9}}}}),CFG);
 
-  // c12 Grouped bars — condition score by region & class (2D)
+  // c12 Grouped bars - condition score by region & class (2D)
   NSPLOT('c12',[bar(D.regLbl,[80,70,72,75,78,65],'Class A','#2563eb'),
     bar(D.regLbl,[62,55,58,60,61,50],'Class B','#c28a14'),
     bar(D.regLbl,[45,38,40,42,44,34],'Class C','#c75a24')],
-    TL('Condition Score by Region & Class',{barmode:'group',yaxis:{title:{text:'Score (0–100)',font:{size:9}},range:[0,100]}}),CFG);
+    TL('Condition Score by Region & Class',{barmode:'group',yaxis:{title:{text:'Score (0-100)',font:{size:9}},range:[0,100]}}),CFG);
 
   // c13 Pie - paved vs unpaved split
   NSPLOT('c13',[{type:'pie',values:[6406.69,14877.33],labels:['Paved 6,406.69 km','Unpaved 14,877.33 km'],
@@ -675,7 +675,7 @@ function initT1(){ACC=TABACC[1];
 
   // c14 Box plot - IRI distribution by class
   NSPLOT('c14',[
-    {type:'box',name:'Class A',y:[2.1,2.4,2.8,3.2,3.3,3.3,3.4,3.6,3.8,4.2],marker:{color:'#2563eb'},line:{color:'#2563eb'},fillcolor:'rgba(0,245,255,0.1)'},
+    {type:'box',name:'Class A',y:[2.1,2.4,2.8,3.2,3.3,3.3,3.4,3.6,3.8,4.2],marker:{color:'#2563eb'},line:{color:'#2563eb'},fillcolor:'rgba(0,113,227,0.1)'},
     {type:'box',name:'Class B',y:[3.2,3.8,4.2,4.4,4.5,4.6,5.0,5.4,5.8,6.2],marker:{color:'#c28a14'},line:{color:'#c28a14'},fillcolor:'rgba(255,238,0,0.1)'},
     {type:'box',name:'Class C',y:[4.8,5.2,5.8,6.2,6.3,6.4,6.8,7.2,7.8,9.1],marker:{color:'#c75a24'},line:{color:'#c75a24'},fillcolor:'rgba(255,102,0,0.1)'}],
     TL('IRI Distribution by Road Class',{yaxis:{title:{text:'IRI m/km',font:{size:9}}}}),CFG);
@@ -695,7 +695,7 @@ function initT1(){ACC=TABACC[1];
 </script>
 <script>
 // ══════════════════════════════════════════════════════════════
-// TAB 2 — PAVEMENT MANAGEMENT (c16–c30)
+// TAB 2 - PAVEMENT MANAGEMENT (c16-c30)
 // ══════════════════════════════════════════════════════════════
 function initT2(){ACC=TABACC[2];
   // c16 Donut - paved condition
@@ -734,7 +734,7 @@ function initT2(){ACC=TABACC[2];
     bar(D.regLbl,reg_crit,'Critical','#b83d6b',{text:reg_crit,textposition:'inside',textfont:{size:8}})],
     TL('Condition by Region (km)',{barmode:'stack',yaxis:{title:{text:'km',font:{size:9}}}}),CFG);
 
-  // c21 Bubble — segment age vs IRI (size = AADT) (2D)
+  // c21 Bubble - segment age vs IRI (size = AADT) (2D)
   const ns=70,xiri=[],yage=[],zaadt=[],cols=[];
   for(let i=0;i<ns;i++){const v=Math.random();xiri.push(1+v*8);yage.push(Math.random()*30);zaadt.push(200+Math.random()*10000);cols.push(v<0.35?'#278a50':v<0.7?'#c28a14':v<0.9?'#c75a24':'#b83d6b');}
   NSPLOT('c21',[{type:'scatter',mode:'markers',x:yage,y:xiri,
@@ -744,10 +744,10 @@ function initT2(){ACC=TABACC[2];
 
   // c22 Multi-line IRI trend
   NSPLOT('c22',[
-    line(D.iriYrs,D.iriA,'Class A Trunk','#2563eb',{fill:'tozeroy',fillcolor:'rgba(0,245,255,0.04)'}),
+    line(D.iriYrs,D.iriA,'Class A Trunk','#2563eb',{fill:'tozeroy',fillcolor:'rgba(0,113,227,0.04)'}),
     line(D.iriYrs,D.iriB,'Class B Regional','#c28a14',{fill:'tozeroy',fillcolor:'rgba(255,238,0,0.04)'}),
     line(D.iriYrs,D.iriC,'Class C District','#c75a24',{fill:'tozeroy',fillcolor:'rgba(255,102,0,0.04)'})],
-    TL('IRI Trend by Road Class 2020–2025',{yaxis:{title:{text:'IRI (m/km)',font:{size:9}},range:[0,10]},xaxis:{title:{text:'Year',font:{size:9}}}}),CFG);
+    TL('IRI Trend by Road Class 2020-2025',{yaxis:{title:{text:'IRI (m/km)',font:{size:9}},range:[0,10]},xaxis:{title:{text:'Year',font:{size:9}}}}),CFG);
 
   // c23 Heatmap - IRI by region × year
   NSPLOT('c23',[{type:'heatmap',
@@ -776,7 +776,7 @@ function initT2(){ACC=TABACC[2];
   // c26 Stacked area - condition evolution
   const yrs=[2020,2021,2022,2023,2024,2025];
   NSPLOT('c26',[
-    line(yrs,[39,38,37,36,36,35],'Good %','#278a50',{fill:'tozeroy',fillcolor:'rgba(0,255,136,0.15)',mode:'lines'}),
+    line(yrs,[39,38,37,36,36,35],'Good %','#278a50',{fill:'tozeroy',fillcolor:'rgba(22,163,74,0.15)',mode:'lines'}),
     line(yrs,[34,34,35,35,35,35],'Fair %','#c28a14',{fill:'tozeroy',fillcolor:'rgba(255,238,0,0.1)',mode:'lines'}),
     line(yrs,[18,19,19,20,20,20],'Poor %','#c75a24',{fill:'tozeroy',fillcolor:'rgba(255,102,0,0.1)',mode:'lines'}),
     line(yrs,[9,9,9,9,9,10],'Critical %','#b83d6b',{fill:'tozeroy',fillcolor:'rgba(255,0,64,0.1)',mode:'lines'})],
@@ -788,7 +788,7 @@ function initT2(){ACC=TABACC[2];
     text:D.costPerKm.map(v=>v.toLocaleString()),textposition:'outside',textfont:{size:8}}],
     TL('Cost per km by Treatment (mn UGX)',{yaxis:{title:{text:'mn UGX/km',font:{size:9}}}}),CFG);
 
-  // c28 Heatmap — IRI by region × treatment (2D)
+  // c28 Heatmap - IRI by region × treatment (2D)
   const iriSurf=D.regLbl.map((_,i)=>D.treatLbl.map((_,j)=>+(2+i*1.2+j*1.8+Math.random()*0.5).toFixed(1)));
   NSPLOT('c28',[{type:'heatmap',z:iriSurf,x:D.treatLbl,y:D.regLbl,
     colorscale:[[0,'#278a50'],[0.5,'#c28a14'],[1,'#b83d6b']],
@@ -798,10 +798,10 @@ function initT2(){ACC=TABACC[2];
 
   // c29 Violin - PCR by region
   NSPLOT('c29',[
-    {type:'violin',name:'Central',y:[72,68,75,80,55,62,48,85,71,66,78,58],marker:{color:'#2563eb'},fillcolor:'rgba(0,245,255,0.15)',line:{color:'#2563eb',width:1.5},box:{visible:true},meanline:{visible:true}},
+    {type:'violin',name:'Central',y:[72,68,75,80,55,62,48,85,71,66,78,58],marker:{color:'#2563eb'},fillcolor:'rgba(0,113,227,0.15)',line:{color:'#2563eb',width:1.5},box:{visible:true},meanline:{visible:true}},
     {type:'violin',name:'Northern',y:[55,48,62,58,45,70,52,40,65,50,47,60],marker:{color:'#c28a14'},fillcolor:'rgba(255,238,0,0.1)',line:{color:'#c28a14',width:1.5},box:{visible:true},meanline:{visible:true}},
-    {type:'violin',name:'Eastern',y:[60,65,58,70,55,75,68,62,72,48,55,80],marker:{color:'#278a50'},fillcolor:'rgba(0,255,136,0.1)',line:{color:'#278a50',width:1.5},box:{visible:true},meanline:{visible:true}},
-    {type:'violin',name:'Western',y:[58,64,70,75,60,68,55,72,65,58,62,78],marker:{color:'#7258b7'},fillcolor:'rgba(185,103,255,0.1)',line:{color:'#7258b7',width:1.5},box:{visible:true},meanline:{visible:true}},
+    {type:'violin',name:'Eastern',y:[60,65,58,70,55,75,68,62,72,48,55,80],marker:{color:'#278a50'},fillcolor:'rgba(22,163,74,0.1)',line:{color:'#278a50',width:1.5},box:{visible:true},meanline:{visible:true}},
+    {type:'violin',name:'Western',y:[58,64,70,75,60,68,55,72,65,58,62,78],marker:{color:'#7258b7'},fillcolor:'rgba(124,58,237,0.1)',line:{color:'#7258b7',width:1.5},box:{visible:true},meanline:{visible:true}},
     {type:'violin',name:'Southern',y:[75,80,68,85,72,78,66,82,74,70,76,84],marker:{color:'#b83d6b'},fillcolor:'rgba(255,45,120,0.1)',line:{color:'#b83d6b',width:1.5},box:{visible:true},meanline:{visible:true}},
     {type:'violin',name:'North Eastern',y:[52,45,58,50,42,62,48,38,56,44,46,54],marker:{color:'#c75a24'},fillcolor:'rgba(255,107,53,0.1)',line:{color:'#c75a24',width:1.5},box:{visible:true},meanline:{visible:true}}],
     TL('Pavement Condition Rating Distribution by Region',{yaxis:{title:{text:'PCR Score 0-100',font:{size:9}}},violinmode:'group'}),CFG);
@@ -816,7 +816,7 @@ function initT2(){ACC=TABACC[2];
 </script>
 <script>
 // ══════════════════════════════════════════════════════════════
-// TAB 3 — TRAFFIC (c31–c45)
+// TAB 3 - TRAFFIC (c31-c45)
 // ══════════════════════════════════════════════════════════════
 function initT3(){ACC=TABACC[3];
   // c31 Horizontal bar - AADT by corridor
@@ -829,14 +829,14 @@ function initT3(){ACC=TABACC[3];
   // c32 Line - AADT trend national
   NSPLOT('c32',[line([2016,2017,2018,2019,2020,2021,2022,2023,2024,2025],[2890,3006,3126,3251,3141,3267,3397,3533,3675,3847],'National Avg AADT','#c28a14',{fill:'tozeroy',fillcolor:'rgba(255,238,0,0.06)'}),
     line([2016,2017,2018,2019,2020,2021,2022,2023,2024,2025],[14200,14800,15400,16100,15200,16000,16800,17400,18000,18400],'Kla-Entebbe','#b83d6b',{yaxis:'y2'})],
-    TL('National AADT Trend 2016–2025',{yaxis:{title:{text:'Avg AADT',font:{size:9}}},
+    TL('National AADT Trend 2016-2025',{yaxis:{title:{text:'Avg AADT',font:{size:9}}},
     yaxis2:{title:{text:'Kla-Entebbe AADT',font:{size:9}},overlaying:'y',side:'right',tickfont:{color:'#b83d6b',size:8}},xaxis:{title:{text:'Year',font:{size:9}}}}),CFG);
 
   // c33 Vehicle composition donut
   NSPLOT('c33',[pie(D.vehComp,D.vehLbl,['#2563eb','#278a50','#c28a14','#c75a24','#7258b7','rgba(148,163,184,0.7)'])],
     TL('Vehicle Class Composition (% AADT)'),CFG);
 
-  // c34 Bubble map — ATC stations: location & volume (2D)
+  // c34 Bubble map - ATC stations: location & volume (2D)
   const stLat=[0.42,0.85,1.62,2.78,3.02,0.31,-0.33,-0.61,-0.54,0.33,0.44,0.61,0.70,0.30,0.06,-0.36,-1.25,-0.62,0.94,0.62,3.60,-1.24,1.43,0.65,2.25];
   const stLng=[32.58,32.49,31.98,32.30,32.38,32.55,31.74,30.64,30.18,32.65,33.20,33.49,34.18,32.58,32.46,31.62,29.99,30.70,33.12,33.50,32.08,29.98,31.36,30.27,32.23];
   const stAADT=[4820,3140,2860,2140,1480,5210,3820,2940,1840,6480,4210,2840,2180,18400,9840,2620,1670,2180,1420,1680,1240,1180,1840,2140,2480];
@@ -850,10 +850,10 @@ function initT3(){ACC=TABACC[3];
 
   // c35 Multi-line forecast
   NSPLOT('c35',[
-    line(D.fcYrs,D.fcNorm,'Normal (4%/yr)','#2563eb',{fill:'tozeroy',fillcolor:'rgba(0,245,255,0.04)'}),
-    line(D.fcYrs,D.fcOpt,'Optimistic (6%/yr)','#278a50',{fill:'tonexty',fillcolor:'rgba(0,255,136,0.04)'}),
+    line(D.fcYrs,D.fcNorm,'Normal (4%/yr)','#2563eb',{fill:'tozeroy',fillcolor:'rgba(0,113,227,0.04)'}),
+    line(D.fcYrs,D.fcOpt,'Optimistic (6%/yr)','#278a50',{fill:'tonexty',fillcolor:'rgba(22,163,74,0.04)'}),
     line(D.fcYrs,D.fcPess,'Pessimistic (2%/yr)','#c75a24',{fill:'tozeroy',fillcolor:'rgba(255,102,0,0.04)'})],
-    TL('AADT Forecast 2016–2035 (3 Scenarios)',{yaxis:{title:{text:'AADT',font:{size:9}}},xaxis:{title:{text:'Year',font:{size:9}}},
+    TL('AADT Forecast 2016-2035 (3 Scenarios)',{yaxis:{title:{text:'AADT',font:{size:9}}},xaxis:{title:{text:'Year',font:{size:9}}},
     shapes:[{type:'line',x0:2025,x1:2025,y0:0,y1:8000,line:{color:'rgba(148,163,184,0.4)',width:1,dash:'dot'}}],
     annotations:[{x:2025,y:7500,text:'Today',showarrow:false,font:{color:'rgba(148,163,184,0.5)',size:8}}]}),CFG);
 
@@ -898,20 +898,20 @@ function initT3(){ACC=TABACC[3];
   NSPLOT('c42',[bar(D.corridors,D.corrGrowth,'Growth %/yr',D.corrGrowth.map(g=>g>4?'#b83d6b':g>3?'#c28a14':'#278a50'),{text:D.corrGrowth.map(v=>v+'%'),textposition:'outside',textfont:{size:8}})],
     TL('Traffic Growth Rate by Corridor (%/yr)',{yaxis:{title:{text:'%/yr',font:{size:9}},range:[0,6.5]}}),CFG);
 
-  // c43 Multi-line — AADT trend by region (2D)
+  // c43 Multi-line - AADT trend by region (2D)
   const yrs3d=[2018,2019,2020,2021,2022,2023,2024,2025];
   const aadtSurf=[[2200,2280,2180,2270,2360,2460,2560,2670],[1840,1910,1830,1910,1990,2070,2160,2240],[1680,1750,1680,1750,1820,1900,1980,2060],[1900,1970,1890,1970,2050,2130,2220,2310],[1500,1560,1490,1560,1620,1690,1760,1830],[980,1020,990,1030,1080,1120,1170,1210]];
   NSPLOT('c43',D.regLbl.map((r,i)=>line(yrs3d,aadtSurf[i],r,D.regCol[i])),
-    TL('AADT Trend by Region 2018–2025',{yaxis:{title:{text:'AADT (veh/day)',font:{size:9}}},xaxis:{title:{text:'Year',font:{size:9}}}}),CFG);
+    TL('AADT Trend by Region 2018-2025',{yaxis:{title:{text:'AADT (veh/day)',font:{size:9}}},xaxis:{title:{text:'Year',font:{size:9}}}}),CFG);
 
   // c44 Box - AADT distribution by road class
   NSPLOT('c44',[
-    {type:'box',name:'Class A',y:[4200,6480,8200,12000,18400,3820,5200,9400],marker:{color:'#2563eb'},fillcolor:'rgba(0,245,255,0.1)',line:{color:'#2563eb'},box:{visible:true},meanline:{visible:true}},
+    {type:'box',name:'Class A',y:[4200,6480,8200,12000,18400,3820,5200,9400],marker:{color:'#2563eb'},fillcolor:'rgba(0,113,227,0.1)',line:{color:'#2563eb'},box:{visible:true},meanline:{visible:true}},
     {type:'box',name:'Class B',y:[1200,1840,2180,2620,3140,3820,1670,2140],marker:{color:'#c28a14'},fillcolor:'rgba(255,238,0,0.1)',line:{color:'#c28a14'},box:{visible:true},meanline:{visible:true}},
     {type:'box',name:'Class C',y:[280,450,640,820,1100,1380,900,620,740],marker:{color:'#c75a24'},fillcolor:'rgba(255,102,0,0.1)',line:{color:'#c75a24'},box:{visible:true},meanline:{visible:true}}],
     TL('AADT Distribution by Road Class',{yaxis:{title:{text:'AADT (veh/day)',font:{size:9}}}}),CFG);
 
-  // c45 Bubble — corridors: AADT vs growth (bubble = IRI) (2D)
+  // c45 Bubble - corridors: AADT vs growth (bubble = IRI) (2D)
   const corrIRI=[2.8,3.1,4.8,5.9,4.2,5.4,5.6,6.1,4.4,4.8];
   NSPLOT('c45',[{type:'scatter',mode:'markers+text',x:D.corrAADT,y:D.corrGrowth,
     text:D.corridors,textposition:'top center',textfont:{size:7,color:'rgba(174,185,201,0.9)'},
@@ -925,7 +925,7 @@ function initT3(){ACC=TABACC[3];
 </script>
 <script>
 // ══════════════════════════════════════════════════════════════
-// TAB 4 — STRUCTURES (c46–c60)
+// TAB 4 - STRUCTURES (c46-c60)
 // ══════════════════════════════════════════════════════════════
 function initT4(){ACC=TABACC[4];
   // c46 Donut - by type
@@ -942,7 +942,7 @@ function initT4(){ACC=TABACC[4];
     text:D.strMat,textposition:'outside',textfont:{size:8}}],
     TL('Structures by Material',{yaxis:{title:{text:'Count',font:{size:9}}}}),CFG);
 
-  // c49 Bubble map — bridges: location & condition (2D)
+  // c49 Bubble map - bridges: location & condition (2D)
   const bLat=[0.42,0.30,0.06,0.44,-0.33,-0.61,2.78,0.70,0.61,1.43,0.65,2.25,0.85,1.62,-1.25,0.31,0.94,0.62,-0.54,3.02,0.33,3.60,-0.36,0.50,1.80];
   const bLng=[32.58,32.58,32.46,33.20,31.74,30.64,32.30,34.18,33.49,31.36,30.27,32.23,32.49,31.98,29.99,32.55,33.12,33.50,30.18,32.38,32.65,32.08,31.62,32.10,31.50];
   const bScore=[82,75,90,68,55,45,72,38,62,70,84,76,65,52,30,88,71,60,48,55,78,42,66,80,58];
@@ -1007,7 +1007,7 @@ function initT4(){ACC=TABACC[4];
     hovertemplate:'Condition: %{x}<br>Repair Cost: UGX %{y:,.0f}mn<extra></extra>'}],
     TL('Repair Cost vs Condition Score',{xaxis:{title:{text:'Condition Score (higher=better)',font:{size:9}}},yaxis:{title:{text:'Estimated Repair Cost (mn UGX)',font:{size:9}}}}),CFG);
 
-  // c57 Heatmap — bridge condition: age × span (2D)
+  // c57 Heatmap - bridge condition: age × span (2D)
   const ageLbl=['<10yr','10-20yr','20-30yr','30-50yr','>50yr'];
   const condSurf=ageLbl.map((_,i)=>D.strSpanLbl.map((_,j)=>Math.round(Math.max(10,90-i*15-j*5+Math.random()*8))));
   NSPLOT('c57',[{type:'heatmap',z:condSurf,x:D.strSpanLbl,y:ageLbl,
@@ -1018,7 +1018,7 @@ function initT4(){ACC=TABACC[4];
 
   // c58 Box - span distribution by type
   NSPLOT('c58',[
-    {type:'box',name:'Bridges',y:[15,22,28,34,42,55,68,82,96,124,180,240],marker:{color:'#2563eb'},fillcolor:'rgba(0,245,255,0.1)',line:{color:'#2563eb'},box:{visible:true},meanline:{visible:true}},
+    {type:'box',name:'Bridges',y:[15,22,28,34,42,55,68,82,96,124,180,240],marker:{color:'#2563eb'},fillcolor:'rgba(0,113,227,0.1)',line:{color:'#2563eb'},box:{visible:true},meanline:{visible:true}},
     {type:'box',name:'Box Culverts',y:[2,3,4,5,6,7,8,9,10,12],marker:{color:'#c28a14'},fillcolor:'rgba(255,238,0,0.1)',line:{color:'#c28a14'},box:{visible:true},meanline:{visible:true}},
     {type:'box',name:'Culverts',y:[1,1.2,1.5,1.8,2,2.4,3,3.5],marker:{color:'#c75a24'},fillcolor:'rgba(255,102,0,0.1)',line:{color:'#c75a24'},box:{visible:true},meanline:{visible:true}}],
     TL('Span Length Distribution by Structure Type',{yaxis:{title:{text:'Span (m)',font:{size:9}}}}),CFG);
@@ -1032,14 +1032,14 @@ function initT4(){ACC=TABACC[4];
     TL('Structure Condition by Region',{barmode:'stack',yaxis:{title:{text:'Count',font:{size:9}}}}),CFG);
 
   // c60 Line - inspection trend
-  NSPLOT('c60',[line([2021,2022,2023,2024,2025],[74,79,84,87,89],'Inspected < 12mth %','#278a50',{fill:'tozeroy',fillcolor:'rgba(0,255,136,0.08)'}),
+  NSPLOT('c60',[line([2021,2022,2023,2024,2025],[74,79,84,87,89],'Inspected < 12mth %','#278a50',{fill:'tozeroy',fillcolor:'rgba(22,163,74,0.08)'}),
     line([2021,2022,2023,2024,2025],[26,21,16,13,11],'Overdue %','#b83d6b',{fill:'tozeroy',fillcolor:'rgba(255,0,64,0.06)'})],
-    TL('Inspection Currency 2021–2025',{yaxis:{title:{text:'%',font:{size:9}},range:[0,115]},xaxis:{title:{text:'Year',font:{size:9}}}}),CFG);
+    TL('Inspection Currency 2021-2025',{yaxis:{title:{text:'%',font:{size:9}},range:[0,115]},xaxis:{title:{text:'Year',font:{size:9}}}}),CFG);
 }
 </script>
 <script>
 // ══════════════════════════════════════════════════════════════
-// TAB 5 — BUDGET (c61–c74)
+// TAB 5 - BUDGET (c61-c74)
 // ══════════════════════════════════════════════════════════════
 function initT5(){ACC=TABACC[5];
   // c61 Donut - budget by category
@@ -1071,13 +1071,13 @@ function initT5(){ACC=TABACC[5];
   // c64 Bar - budget vs actual by year
   NSPLOT('c64',[bar(D.budYrs,D.budAlloc,'Allocated','#2563eb',{text:D.budAlloc.map(v=>v.toLocaleString()),textposition:'outside',textfont:{size:8}}),
     bar(D.budYrs,[1380,1520,1640,1253],'Spent','#278a5088',{text:[1380,1520,1640,1253].map(v=>v.toLocaleString()),textposition:'outside',textfont:{size:8}})],
-    TL('Budget vs Actuals FY22–FY26 (bn UGX)',{barmode:'group',yaxis:{title:{text:'bn UGX',font:{size:9}}}}),CFG);
+    TL('Budget vs Actuals FY22-FY26 (bn UGX)',{barmode:'group',yaxis:{title:{text:'bn UGX',font:{size:9}}}}),CFG);
 
   // c65 Line - budget trend + forecast
   NSPLOT('c65',[
-    line(['FY20/21','FY21/22','FY22/23','FY23/24','FY24/25','FY25/26','FY26/27*','FY27/28*'],[980,1180,1420,1580,1710,1842,2050,2280],'Allocated','#2563eb',{fill:'tozeroy',fillcolor:'rgba(0,245,255,0.05)'}),
-    line(['FY20/21','FY21/22','FY22/23','FY23/24','FY24/25','FY25/26','FY26/27*','FY27/28*'],[940,1120,1380,1520,1640,1253,null,null],'Spent','#278a50',{fill:'tozeroy',fillcolor:'rgba(0,255,136,0.04)'})],
-    TL('Budget Trend 2020–2028 (bn UGX) *projected',{yaxis:{title:{text:'bn UGX',font:{size:9}}},xaxis:{title:{text:'Financial Year',font:{size:9}}}}),CFG);
+    line(['FY20/21','FY21/22','FY22/23','FY23/24','FY24/25','FY25/26','FY26/27*','FY27/28*'],[980,1180,1420,1580,1710,1842,2050,2280],'Allocated','#2563eb',{fill:'tozeroy',fillcolor:'rgba(0,113,227,0.05)'}),
+    line(['FY20/21','FY21/22','FY22/23','FY23/24','FY24/25','FY25/26','FY26/27*','FY27/28*'],[940,1120,1380,1520,1640,1253,null,null],'Spent','#278a50',{fill:'tozeroy',fillcolor:'rgba(22,163,74,0.04)'})],
+    TL('Budget Trend 2020-2028 (bn UGX) *projected',{yaxis:{title:{text:'bn UGX',font:{size:9}}},xaxis:{title:{text:'Financial Year',font:{size:9}}}}),CFG);
 
   // c66 Bar - cost per km
   NSPLOT('c66',[bar(D.costTreat,D.costPerKm,'Cost/km',['#278a50','#c28a14','#ffa63f','#ff5330','#b83d6b'],{text:D.costPerKm.map(v=>v.toFixed(0)+' mn'),textposition:'outside',textfont:{size:8}})],
@@ -1088,7 +1088,7 @@ function initT5(){ACC=TABACC[5];
     bar(D.regLbl,[320,245,286,163,156,83],'Spent so far','#278a5077',{text:['320bn','245bn','286bn','163bn','156bn','83bn'],textposition:'outside',textfont:{size:8}})],
     TL('Budget by Region FY25/26 (bn UGX)',{barmode:'group',yaxis:{title:{text:'bn UGX',font:{size:9}}}}),CFG);
 
-  // c68 Bubble — budget vs km treated (bubble = condition gain) (2D)
+  // c68 Bubble - budget vs km treated (bubble = condition gain) (2D)
   NSPLOT('c68',[{type:'scatter',mode:'markers+text',
     x:[420,472,640,180,130,320,280,380],y:[8420,1240,215,890,0,640,480,820],
     text:['Routine','Periodic','Reconstruct','Emergency','Admin','Overlay','Rehab','Reseal'],
@@ -1101,7 +1101,7 @@ function initT5(){ACC=TABACC[5];
 
   // c69 Area - investment gap
   NSPLOT('c69',[
-    line(D.budYrs,D.budAlloc,'Available Budget','#2563eb',{fill:'tozeroy',fillcolor:'rgba(0,245,255,0.08)'}),
+    line(D.budYrs,D.budAlloc,'Available Budget','#2563eb',{fill:'tozeroy',fillcolor:'rgba(0,113,227,0.08)'}),
     line(D.budYrs,[2840,3100,3350,3620],'Maintenance Need','#b83d6b',{fill:'tozeroy',fillcolor:'rgba(255,0,64,0.06)'})],
     TL('Investment Gap: Budget vs Maintenance Need (bn UGX)',{yaxis:{title:{text:'bn UGX',font:{size:9}}}}),CFG);
 
@@ -1139,7 +1139,7 @@ function initT5(){ACC=TABACC[5];
 }
 
 // ══════════════════════════════════════════════════════════════
-// TAB 6 — PROJECTS (c75–c87)
+// TAB 6 - PROJECTS (c75-c87)
 // ══════════════════════════════════════════════════════════════
 function initT6(){ACC=TABACC[6];
   // c75 Horizontal bar - project progress
@@ -1172,7 +1172,7 @@ function initT6(){ACC=TABACC[6];
     marker:{color:D.projPct.map(v=>v>=75?'#278a50':v>=50?'#c28a14':'#b83d6b'),size:12,symbol:'diamond'},name:'Progress',hovertemplate:'%{y}: %{meta}% complete<extra></extra>',meta:D.projPct}],
     TL('Project Timeline & Progress',{yaxis:{tickfont:{size:8.5}},xaxis:{title:{text:'Year',font:{size:9}},range:[2021,2029],dtick:1}}),CFG);
 
-  // c79 Bubble — projects: budget vs length (colour = % complete) (2D)
+  // c79 Bubble - projects: budget vs length (colour = % complete) (2D)
   NSPLOT('c79',[{type:'scatter',mode:'markers+text',x:D.projBn,y:[186,62,124,248,380,210,154,290],
     text:D.projName.map(n=>n.split('-')[0]),textposition:'top center',textfont:{size:7,color:'rgba(174,185,201,0.9)'},
     marker:{size:D.projPct.map(v=>8+v/6),color:D.projPct,
@@ -1207,7 +1207,7 @@ function initT6(){ACC=TABACC[6];
     TL('Budget vs Expenditure (bn UGX)',{barmode:'group',yaxis:{title:{text:'bn UGX',font:{size:9}}},xaxis:{tickfont:{size:7.5}}}),CFG);
 
   // c85 Area - works completion trend
-  NSPLOT('c85',[line(['FY20/21','FY21/22','FY22/23','FY23/24','FY24/25','FY25/26'],[180,240,320,420,520,428],'km Completed/yr','#278a50',{fill:'tozeroy',fillcolor:'rgba(0,255,136,0.08)'})],
+  NSPLOT('c85',[line(['FY20/21','FY21/22','FY22/23','FY23/24','FY24/25','FY25/26'],[180,240,320,420,520,428],'km Completed/yr','#278a50',{fill:'tozeroy',fillcolor:'rgba(22,163,74,0.08)'})],
     TL('Annual Works Completion Trend (km/yr)',{yaxis:{title:{text:'km completed',font:{size:9}}}}),CFG);
 
   // c86 Heatmap - project density by region × type
@@ -1225,14 +1225,14 @@ function initT6(){ACC=TABACC[6];
 </script>
 <script>
 // ══════════════════════════════════════════════════════════════
-// TAB 7 — ROAD SAFETY (c88–c100)
+// TAB 7 - ROAD SAFETY (c88-c100)
 // ══════════════════════════════════════════════════════════════
 function initT7(){ACC=TABACC[7];
   // c88 Line - fatalities trend
   NSPLOT('c88',[
     line(D.safetyYrs,D.fatalities,'Fatalities/yr','#b83d6b',{fill:'tozeroy',fillcolor:'rgba(255,0,64,0.06)'}),
     line(D.safetyYrs,[2800,2700,2750,2700,2650,2600,2550,2500,2450,2400],'UN Target','#c28a14',{dash:'dash'})],
-    TL('Road Fatalities Trend (2016–2025) + UN Decade Target',{yaxis:{title:{text:'Fatalities/yr',font:{size:9}}},xaxis:{tickfont:{size:8.5}}}),CFG);
+    TL('Road Fatalities Trend (2016-2025) + UN Decade Target',{yaxis:{title:{text:'Fatalities/yr',font:{size:9}}},xaxis:{tickfont:{size:8.5}}}),CFG);
 
   // c89 Donut - accident cause
   NSPLOT('c89',[{type:'pie',values:D.causePct,labels:D.causeLbl,hole:0.45,
@@ -1260,7 +1260,7 @@ function initT7(){ACC=TABACC[7];
     text:[8.2,4.1,12.4,9.8,11.2,14.8,18.4,21.1].map(v=>v+'%'),textposition:'outside',textfont:{size:8}}],
     TL('Accident Distribution by Time of Day (%)',{xaxis:{title:{text:'Hour (24hr)',font:{size:9}}},yaxis:{title:{text:'% of All Accidents',font:{size:9}}}}),CFG);
 
-  // c93 Bubble map — blackspots: location & accident rate (2D)
+  // c93 Bubble map - blackspots: location & accident rate (2D)
   NSPLOT('c93',[{type:'scatter',mode:'markers+text',
     x:[32.6,32.4,30.1,33.8,34.1,34.6,31.5,30.8,33.2,32.9],
     y:[0.3,0.2,-0.3,0.68,1.2,1.4,0.1,-0.8,0.9,0.6],
@@ -1276,7 +1276,7 @@ function initT7(){ACC=TABACC[7];
   // c94 Line multi - fatalities by region
   const regFatal=[[480,460,478,452,340,368,380,398,386,370],[380,366,372,358,268,292,302,316,308,294],[340,326,334,320,240,262,272,284,276,264],[620,592,636,568,492,258,386,382,410,319],[300,290,296,284,214,232,242,252,246,236],[260,250,256,246,186,202,210,218,214,204]];
   NSPLOT('c94',D.regLbl.map((r,i)=>line(D.safetyYrs,regFatal[i],r,D.regCol[i])),
-    TL('Fatalities by Region 2016–2025',{yaxis:{title:{text:'Deaths',font:{size:9}}},xaxis:{tickfont:{size:8.5}}}),CFG);
+    TL('Fatalities by Region 2016-2025',{yaxis:{title:{text:'Deaths',font:{size:9}}},xaxis:{tickfont:{size:8.5}}}),CFG);
 
   // c95 Heatmap - accidents: month × hour
   const mthHrData=Array.from({length:12},(_,m)=>Array.from({length:8},(_,h)=>
@@ -1319,7 +1319,7 @@ function initT7(){ACC=TABACC[7];
     text:[82,64,71,58,42,76,68].map(v=>v+'%'),textposition:'outside',textfont:{size:8}}],
     TL('Road Safety Engineering Compliance (% of Network)',{yaxis:{title:{text:'% Compliant',font:{size:9}},range:[0,110]},xaxis:{tickfont:{size:8.5}}}),CFG);
 
-  // c100 Heatmap — accident risk: speed limit × roughness (2D)
+  // c100 Heatmap - accident risk: speed limit × roughness (2D)
   const spd=[50,60,80,100,110],riri=[1,2,3,4,5,6,7,8];
   const riskZ=riri.map(r=>spd.map(s=>Math.round(5+r*8+(s/50)*12+r*(s/50)*4)));
   NSPLOT('c100',[{type:'heatmap',x:spd,y:riri,z:riskZ,
@@ -1333,7 +1333,7 @@ function initT7(){ACC=TABACC[7];
 // ══════════════════════════════════════════════════════════════
 // TAB SWITCHER + BOOTSTRAP
 // ══════════════════════════════════════════════════════════════
-// Single boot path — first-tab init once DOM is ready
+// Single boot path - first-tab init once DOM is ready
 document.addEventListener('DOMContentLoaded',function(){ showTab(1); });
 </script>
 </body>
