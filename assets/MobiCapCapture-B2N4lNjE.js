@@ -105,7 +105,7 @@ function Ue(){
             NODES.map(n=>{
               const active=n.id===sel;
               return e.jsxs("g",{onClick:()=>setSel(n.id),style:{cursor:"pointer"},children:[
-                e.jsx("circle",{cx:n.x,cy:n.y,r:n.r+(active?5:0),fill:active?n.color:"#FFFFFF",stroke:n.color,strokeWidth:active?3:2.5}),
+                e.jsx("rect",{x:n.x-74,y:n.y-27,width:148,height:54,rx:14,fill:active?n.color:"#FFFFFF",stroke:n.color,strokeWidth:active?3:2}),
                 e.jsx("text",{x:n.x,y:n.y-2,textAnchor:"middle",fontSize:11.5,fontWeight:800,fill:active?"#FFFFFF":"#0F172A",children:n.label}),
                 e.jsx("text",{x:n.x,y:n.y+14,textAnchor:"middle",fontSize:9.5,fontWeight:600,fill:active?"#E2E8F0":"#475569",children:n.sub})
               ]},n.id);
