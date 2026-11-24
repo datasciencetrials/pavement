@@ -1,7 +1,7 @@
 {
  "source": "Uganda National Road Network Repository / 5.Road Condition Data / 2025-26 / ROMDAS Data (raw ROMDAS Access-database exports, one file per surveyed link/lane run)",
  "survey_period": "September - October 2025",
- "method": "ROMDAS profilometer + rut-bar vehicle survey (Dynatest-class laser profiler); IRI sampled per 100m sub-section, rutting per 1m sub-section, network-average per file computed from all non-zero samples",
+ "method": "ROMDAS(Roughness and rutting machine based testing) profilometer + rut-bar vehicle survey (laser profiler); IRI sampled per 100m sub-section, rutting per 1m sub-section, network-average per file computed from all non-zero samples",
  "note": "Every ROMDAS survey file in the 2025-26 folder is included except 2 unreadable process-log-only files with no measurement tables (360_280825.mdb, 433_LINK02.mdb, both excluded). Road name/region/class/surface joined from the network register where the link code matches; unmatched codes are mostly DUCAR/feeder-road survey runs not in the national trunk register and are shown with the code only.",
  "file_count": 260,
  "excluded_files": [

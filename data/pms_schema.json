@@ -18372,7 +18372,7 @@
       "variable_name": "file_format",
       "data_type": "TEXT",
       "value_numeric": null,
-      "value_text": "Dynatest F25",
+      "value_text": "FWD F25",
       "unit": null,
       "description": "Published source-format label",
       "updated_at": "2026-07-20 10:18:12"
@@ -18979,7 +18979,7 @@
       "parser_name": "dynatest_f25",
       "content_signature": "",
       "ingestion_mode": "structured",
-      "description": "Dynatest F25 structural measurement file"
+      "description": "FWD F25 structural measurement file"
     },
     {
       "repository_group": "fwd",

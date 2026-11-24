@@ -1,7 +1,7 @@
 [
   {
     "category": "Paved National Roads",
-    "governanceTier": "DNR DST",
+    "governanceTier": "National Network",
     "totalKm": 6405,
     "coveragePct": 30.07,
     "populationServedM": 18.4,
@@ -18,7 +18,7 @@
   },
   {
     "category": "Unpaved National Roads",
-    "governanceTier": "DNR DST",
+    "governanceTier": "National Network",
     "totalKm": 14897,
     "coveragePct": 69.93,
     "populationServedM": 8.2,
@@ -35,7 +35,7 @@
   },
   {
     "category": "DUCAR Urban Roads",
-    "governanceTier": "DDUCAR DST",
+    "governanceTier": "DUCAR Network",
     "totalKm": 19952,
     "coveragePct": 60.0,
     "populationServedM": 9.8,
@@ -52,7 +52,7 @@
   },
   {
     "category": "DUCAR District Roads",
-    "governanceTier": "DDUCAR DST",
+    "governanceTier": "DUCAR Network",
     "totalKm": 38603,
     "coveragePct": 11.0,
     "populationServedM": 14.6,
@@ -69,7 +69,7 @@
   },
   {
     "category": "Community Access Roads",
-    "governanceTier": "DDUCAR DST / LGs",
+    "governanceTier": "DUCAR Network / LGs",
     "totalKm": 79948,
     "coveragePct": 5.0,
     "populationServedM": 22.8,
@@ -86,7 +86,7 @@
   },
   {
     "category": "National Bridges & Structures",
-    "governanceTier": "DNR DST (BMS)",
+    "governanceTier": "National Network (BMS)",
     "totalKm": 0,
     "structuresCount": 998,
     "bridgesCount": 552,
@@ -103,7 +103,7 @@
   },
   {
     "category": "Ferry Crossings",
-    "governanceTier": "DNR DST",
+    "governanceTier": "National Network",
     "totalKm": 0,
     "ferriesCount": 12,
     "majorLakeCrossings": [
@@ -120,7 +120,7 @@
   },
   {
     "category": "Weigh Bridges & Traffic Stations",
-    "governanceTier": "DNR DST (TCS)",
+    "governanceTier": "National Network (TCS)",
     "totalKm": 0,
     "weighBridgesCount": 21,
     "tcsStationsCount": 298,

@@ -4,10 +4,10 @@
  */
 :root {
   color-scheme: light !important;
-  --apple-page: #f4f6f8;
+  --apple-page: #F5F5F7;
   --apple-surface: #ffffff;
   --apple-surface-soft: #f8fafc;
-  --apple-text: #111827;
+  --apple-text: #0F172A;
   --apple-muted: #4b5563;
   --apple-line: #cbd5e1;
   --apple-blue: #2563eb;
@@ -260,11 +260,15 @@ pre {
 }
 
 .leaflet-control,
+.leaflet-control-zoom a,
+.leaflet-control-layers,
+.leaflet-control-layers-toggle,
+.leaflet-control-layers-list,
 .maplibregl-ctrl,
 .mapboxgl-ctrl {
-  color: var(--apple-text) !important;
-  background: rgba(255, 255, 255, .94) !important;
-  border-color: rgba(0, 0, 0, .12) !important;
+  color: #0F172A !important;
+  background: rgba(255, 255, 255, .96) !important;
+  border-color: #E2E8F0 !important;
   box-shadow: var(--apple-shadow) !important;
 }
 
@@ -272,8 +276,9 @@ pre {
 .leaflet-popup-tip,
 .maplibregl-popup-content,
 .mapboxgl-popup-content {
-  color: var(--apple-text) !important;
+  color: #0F172A !important;
   background: #ffffff !important;
+  border-color: #E2E8F0 !important;
 }
 
 ::-webkit-scrollbar {

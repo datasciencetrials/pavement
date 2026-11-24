@@ -498,7 +498,7 @@ const D = {
   strAge:[84,128,156,112,66], strAgeLbl:['<10yr','10-20yr','20-30yr','30-50yr','>50yr'],
   strRegCond:[[44,36,28,12],[30,24,22,6],[52,40,32,14],[41,38,27,12],[20,16,14,6],[10,10,8,4]], // region×cond
   // BUDGET
-  budCat:['Routine Maint','Periodic Maint','Development','Emergency','Admin'],
+  budCat:['Routine Maint','Periodic Maint','Development','Emergency','Operations'],
   budBnUGX:[420,472,640,180,130],
   budYrs:['FY22/23','FY23/24','FY24/25','FY25/26'],
   budAlloc:[1420,1580,1710,1842], budSpent:[1380,1520,1640,null],
@@ -807,7 +807,7 @@ function initT2(){ACC=TABACC[2];
     TL('Pavement Condition Rating Distribution by Region',{yaxis:{title:{text:'PCR Score 0-100',font:{size:9}}},violinmode:'group'}),CFG);
 
   // c30 Funnel - treatment pipeline
-  NSPLOT('c30',[{type:'funnel',y:['Surveyed Links','Condition Assessed','Treatment Planned','Budgeted','Under Contract','Completed FY25'],
+  NSPLOT('c30',[{type:'funnel',y:['Surveyed Network','Condition Assessed','Treatment Planned','Budgeted','Under Contract','Completed FY25'],
     x:[21284.02,20840,8420,4200,1240,428],
     marker:{color:['#2563eb','#148da0','#00aacc','#c28a14','#c75a24','#278a50'],line:{color:'#0F172A',width:0.5}},
     textinfo:'value+percent initial',textfont:{size:8.5,color:'#c3cede'},opacity:0.9}],
@@ -1043,7 +1043,7 @@ function initT4(){ACC=TABACC[4];
 // ══════════════════════════════════════════════════════════════
 function initT5(){ACC=TABACC[5];
   // c61 Donut - budget by category
-  NSPLOT('c61',[pie(D.budBnUGX,['Routine Maint 420bn','Periodic Maint 472bn','Development 640bn','Emergency 180bn','Admin 130bn'],['#278a50','#2563eb','#7258b7','#c75a24','rgba(148,163,184,0.7)'])],
+  NSPLOT('c61',[pie(D.budBnUGX,['Routine Maint 420bn','Periodic Maint 472bn','Development 640bn','Emergency 180bn','Operations 130bn'],['#278a50','#2563eb','#7258b7','#c75a24','rgba(148,163,184,0.7)'])],
     TL('Budget FY25/26 by Category (bn UGX)'),CFG);
 
   // c62 Gauge - budget utilisation
@@ -1059,7 +1059,7 @@ function initT5(){ACC=TABACC[5];
 
   // c63 Waterfall - budget allocation
   NSPLOT('c63',[{type:'waterfall',orientation:'v',
-    x:['Total Budget','Routine','Periodic','Development','Emergency','Admin','Remaining'],
+    x:['Total Budget','Routine','Periodic','Development','Emergency','Operations','Remaining'],
     y:[1842,-420,-472,-640,-180,-130,0],
     measure:['absolute','relative','relative','relative','relative','relative','total'],
     connector:{line:{color:'rgba(148,163,184,0.25)',width:1}},
@@ -1091,7 +1091,7 @@ function initT5(){ACC=TABACC[5];
   // c68 Bubble - budget vs km treated (bubble = condition gain) (2D)
   NSPLOT('c68',[{type:'scatter',mode:'markers+text',
     x:[420,472,640,180,130,320,280,380],y:[8420,1240,215,890,0,640,480,820],
-    text:['Routine','Periodic','Reconstruct','Emergency','Admin','Overlay','Rehab','Reseal'],
+    text:['Routine','Periodic','Reconstruct','Emergency','Operations','Overlay','Rehab','Reseal'],
     textposition:'top center',textfont:{size:7,color:'rgba(174,185,201,0.9)'},
     marker:{size:[2,8,15,4,1,6,5,7].map(v=>7+v*1.7),
     color:['#278a50','#2563eb','#b83d6b','#c75a24','rgba(148,163,184,0.7)','#c28a14','#ff5330','#00aacc'],
