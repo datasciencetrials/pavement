@@ -1,6 +1,6 @@
 import{j as e}from"./index-B-EbfzqS.js";import{r as g}from"./vendor-recharts-wkQjnUGp.js";
 const NODES=[
-  {id:"root",label:"MoWT NPMS",sub:"21,284.02 km",x:440,y:230,color:"#0071E3",r:46,
+  {id:"root",label:"National Roads NPMS",sub:"21,284.02 km",x:440,y:230,color:"#0071E3",r:46,
    desc:"National Pavement Management System (FY 2026/27 baseline) providing view-only condition intelligence, deterioration modelling, and Vision 2040 prioritisation across Uganda's 21,284.02 km National Road Network."},
   {id:"extent",label:"Network Extent",sub:"Classes A, B, C, M",x:175,y:95,color:"#0071E3",r:34,
    desc:"Authoritative FY 2026/27 extent: 21,284.02 km total. International Trunk (Class A): 2,604.65 km; National Trunk (Class B): 2,845.27 km; Primary (Class C): 15,689.54 km; Expressways (Class M): 144.56 km."},
@@ -27,7 +27,7 @@ function Ue(){
   return e.jsx("div",{style:{height:"100%",overflowY:"auto",background:"#F5F5F7",color:"#0F172A",padding:"20px 24px 48px",fontFamily:"Inter, Arial, sans-serif"},children:e.jsxs("div",{style:{maxWidth:1240,margin:"0 auto",display:"flex",flexDirection:"column",gap:18},children:[
     e.jsxs("div",{style:{...card,display:"flex",flexWrap:"wrap",justifyContent:"space-between",alignItems:"center",gap:16},children:[
       e.jsxs("div",{children:[
-        e.jsx("div",{style:{fontSize:11,fontWeight:800,letterSpacing:"0.08em",color:"#0071E3",textTransform:"uppercase"},children:"MINISTRY OF WORKS AND TRANSPORT · DEPARTMENT OF NATIONAL ROADS"}),
+        e.jsx("div",{style:{fontSize:11,fontWeight:800,letterSpacing:"0.08em",color:"#0071E3",textTransform:"uppercase"},children:"UGANDA TRANSPORT GIS ENTERPRISE · NATIONAL ROAD NETWORK ASSET ENTERPRISE"}),
         e.jsx("h1",{style:{margin:"4px 0 4px",fontSize:22,fontWeight:800,color:"#0F172A"},children:"Platform Documentation & Interactive Mind Map"}),
         e.jsx("p",{style:{margin:0,fontSize:13,color:"#475569"},children:"View-only reference guide, authoritative FY 2026/27 baseline figures, survey standards, and Vision 2040 system architecture."})
       ]}),
